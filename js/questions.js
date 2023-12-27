@@ -73,7 +73,7 @@ const questions = [
       id: 10,
       q: "Select the sentence that shows Lara is most likely to go swimming on Saturday.",
       options: ["Lara will go swimming on Saturday.", "Lara should go swimming on Saturday.", "Lara might go swimming on Saturday.", "Lara could go swimming on Saturday."],
-      answer: 1,
+      answer: 0,
       questionRef: "2023-paper1-q9"
     },
     {
