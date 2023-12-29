@@ -190,6 +190,13 @@ const questions = [
       answer: 1,
       questionRef: "2023-paper1-q50c"
     },
+    {
+      id: 26,
+      q: "Which sentence must end with a question mark? Select one.",  
+      options: ["Shall we go round the fitness trail in the park", "We could go tomorrow if you like", "What I really like is the rope bridge", "Let me know what you would like to do"],
+      answer: 0,
+      questionRef: "2022-paper1-q4"
+    },
     
   //example of an image-based question
   // {
