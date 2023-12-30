@@ -306,7 +306,7 @@ const questions = [
   },
   {
     id: 31,
-    q: "What does the word them refer to in the sentence below? 'Although deserts are very dry, a rich variety of plants and animals can survive in them.'",
+    q: "What does the word 'them' refer to in the sentence below? 'Although deserts are very dry, a rich variety of plants and animals can survive in them.'",
     options: ["deserts", "variety", "plants", "animals"],
     answer: 0,
     questionRef: "2022-paper1-q10",
@@ -419,7 +419,7 @@ const questions = [
   },
   {
     id: 46,
-    q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false. 'The trees' leaves were green.'There is only one tree.",
+    q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false. 'The trees' leaves were green.' There is only one tree.",
     options: ["true", "false"],
     answer: 1,
     questionRef: "2022-paper1-q45c",
@@ -433,7 +433,7 @@ const questions = [
   },
   {
     id: 48,
-    q: "Tick one box to show which form of the verb is used by the word surrounded by asterisks in the following sentence . 'Nathan *had hoped* for a part in the school play.'",
+    q: "Tick one box to show which form of the verb is used by the word surrounded by asterisks in the following sentence. 'Nathan *had hoped* for a part in the school play.'",
     options: ["Simple past", "Past progressive", "Past perfect"],
     answer: 2,
     questionRef: "2022-paper1-q",
