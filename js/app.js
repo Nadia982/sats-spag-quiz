@@ -39,7 +39,11 @@ function getNewQuestion() {
     availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
   currentQuestion = questionIndex;
   questionText.innerHTML = currentQuestion.q;
-
+//CHANGE THIS LINE HERE
+  //CHANGE THIS LINE HERE
+  //CHANGE THIS LINE HERE
+  //CHANGE THIS LINE HERE
+  //CHANGE THIS LINE HERE
   // get the position of "QuestionIndex" from the "AvailableQuestions" array
 
   const index1 = availableQuestions.indexOf(questionIndex);
