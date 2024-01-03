@@ -40,12 +40,9 @@ function getNewQuestion() {
     availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
   currentQuestion = questionIndex;
   questionText.innerHTML = currentQuestion.q;
-  questionText2.innerHTML = currentQuestion.q2;
-//CHANGE THIS LINE HERE
-  //CHANGE THIS LINE HERE
-  //CHANGE THIS LINE HERE
-  //CHANGE THIS LINE HERE
-  //CHANGE THIS LINE HERE
+
+  
+
   // get the position of "QuestionIndex" from the "AvailableQuestions" array
 
   const index1 = availableQuestions.indexOf(questionIndex);
@@ -55,6 +52,14 @@ function getNewQuestion() {
   availableQuestions.splice(index1, 1);
 
   // show question image if "img" property exists
+
+  if (currentQuestion.hasOwnProperty("q2")) {
+    // questionText2.innerHTML = currentQuestion.q2;
+    const q2 = document.createElement("p");
+    q2.innerHTML = currentQuestion.q2;
+    q2.setAttribute("class","question-text-2");
+    questionText.appendChild(q2);
+  }
 
   if (currentQuestion.hasOwnProperty("img")) {
     const img = document.createElement("img");
