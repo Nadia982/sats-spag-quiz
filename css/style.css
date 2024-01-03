@@ -190,11 +190,6 @@
     animation: slideInLeft .5s ease forwards;
   }
   
-  .quiz-box .option-container .option.correct
-  {
-    font-weight: bold;
-  }
-  
   @keyframes slideInLeft {
     0%{ 
       transform: translateX(-100%); 
