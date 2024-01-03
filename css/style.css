@@ -136,13 +136,12 @@
     margin-top: 1rem;
   }
   
-  .question-text-2 em {
+  .quiz-box em {
     font-size: 1.2rem;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
     font-style: normal;
-
   }
 
   .quiz-box .question-text img {
@@ -153,7 +152,6 @@
   
   .quiz-box .option-container .option {
     background-color: #ccc;
-    /* background-color: purple; */
     padding: 0.8rem;
     font-size: 1.15rem;
     line-height: 1.3;

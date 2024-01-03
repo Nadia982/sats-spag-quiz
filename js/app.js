@@ -54,11 +54,16 @@ function getNewQuestion() {
   // show question image if "img" property exists
 
   if (currentQuestion.hasOwnProperty("q2")) {
-    // questionText2.innerHTML = currentQuestion.q2;
     const q2 = document.createElement("p");
     q2.innerHTML = currentQuestion.q2;
     q2.setAttribute("class","question-text-2");
     questionText.appendChild(q2);
+  }
+  if (currentQuestion.hasOwnProperty("q3")) {
+    const q3 = document.createElement("p");
+    q3.innerHTML = currentQuestion.q3;
+    q3.setAttribute("class","question-text-2");
+    questionText.appendChild(q3);
   }
 
   if (currentQuestion.hasOwnProperty("img")) {
