@@ -452,14 +452,4 @@ const questions = [
     answer: 0,
     questionRef: "2022-paper1-q",
   },
-
-  //example of an image-based question
-  // {
-  //   id: 11,
-  //   q: "How many squares are showing in this pic?",
-  //   options: ["3", "2", "1"],
-  //   answer: 2,
-  //   img: "img/square.jpg"
-  // questionRef:
-  //   }
-];
+]

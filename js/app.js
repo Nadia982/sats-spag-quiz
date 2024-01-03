@@ -1,6 +1,7 @@
 const questionNumber = document.querySelector(".question-number");
 
 const questionText = document.querySelector(".question-text");
+const questionText2 = document.querySelector(".question-text-2");
 
 const optionContainer = document.querySelector(".option-container");
 const answersIndicatorContainer = document.querySelector(".answers-indicator");
@@ -39,6 +40,7 @@ function getNewQuestion() {
     availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
   currentQuestion = questionIndex;
   questionText.innerHTML = currentQuestion.q;
+  questionText2.innerHTML = currentQuestion.q2;
 //CHANGE THIS LINE HERE
   //CHANGE THIS LINE HERE
   //CHANGE THIS LINE HERE
@@ -55,7 +57,6 @@ function getNewQuestion() {
   // show question image if "img" property exists
 
   if (currentQuestion.hasOwnProperty("img")) {
-    console.log(currentQuestion.img);
     const img = document.createElement("img");
     img.src = currentQuestion.img;
     questionText.appendChild(img);
