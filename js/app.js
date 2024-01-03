@@ -219,7 +219,7 @@ function quizResult() {
     attempt - correctAnswers;
   const percentage = (correctAnswers / questionLimit) * 100;
   resultBox.querySelector(".percent-correct").innerHTML =
-    percentage.toFixed(2) + "%";
+    percentage.toFixed(0) + "%";
   resultBox.querySelector(".total-score").innerHTML =
     correctAnswers + "/" + questionLimit;
 }
