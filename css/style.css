@@ -58,14 +58,14 @@
     display: none;
   }
   
-  button.option{
+  button.choice{
     display: block;
     width: 100%;
     text-align: left;
+    border: 2px solid #ccc;
   }
   
   button:disabled{
-  /* background: inherit; */
   color: inherit;
   }
   
@@ -149,7 +149,7 @@
     margin-top: 1rem;
   }
   
-  .quiz-box .option-container .option {
+  .quiz-box .choices-container .choice {
     background-color: #ccc;
     padding: 0.8rem;
     font-size: 1.15rem;
@@ -163,7 +163,7 @@
     overflow: hidden;
   }
   
-  .quiz-box .option-container .option.already-answered{
+  .quiz-box .choices-container .choice.already-answered{
     pointer-events: none;
   }
   
@@ -177,7 +177,7 @@
     }
   }
   
-  .quiz-box .option-container .option.correct::before {
+  .quiz-box .choices-container .choice.correct::before {
     content: "";
     position: absolute;
     left: 0;
@@ -199,7 +199,7 @@
     }
   }
   
-  .quiz-box .option-container .option.incorrect::before {
+  .quiz-box .choices-container .choice.incorrect::before {
     content: "";
     position: absolute;
     left: 0;
@@ -211,7 +211,11 @@
     animation: slideInLeft .5s ease forwards;
   }
   
-  .quiz-box .option-container .option:focus, .quiz-box .option-container .option:hover {
+  .quiz-box .choices-container .choice:focus {
+    border: 1px solid black;
+  }
+  
+  .quiz-box .choices-container .choice:hover {
     background-color: #aaa;
   }
   

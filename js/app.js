@@ -1,9 +1,11 @@
+const attributionLink = document.querySelector(".attribution-link");
+const startBtn = document.querySelector(".start-btn");
 const questionNumber = document.querySelector(".question-number");
 
 const questionText = document.querySelector(".question-text");
 const questionText2 = document.querySelector(".question-text-2");
 
-const optionContainer = document.querySelector(".option-container");
+const choicesContainer = document.querySelector(".choices-container");
 const answersIndicatorContainer = document.querySelector(".answers-indicator");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
@@ -14,9 +16,12 @@ const questionLimit = 10;
 let questionCounter = 0;
 let currentQuestion;
 let availableQuestions = [];
-let availableOptions = [];
+let availableChoices = [];
 let correctAnswers = 0;
 let attempt = 0;
+
+startBtn.tabIndex = 1;
+attributionLink.tabIndex = 0;
 
 // add the questions to the availableQuestions array
 function setAvailableQuestions() {
@@ -26,10 +31,9 @@ function setAvailableQuestions() {
   }
 }
 
-//set question number, question text and answer options
+//set question number, question text and answer choices
 function getNewQuestion() {
   nextButton.classList.add("hide");
-
   //set question number
   questionNumber.innerHTML = `Question ${
     questionCounter + 1
@@ -72,93 +76,90 @@ function getNewQuestion() {
     questionText.appendChild(img);
   }
 
-  // set options
-  // get the length of the list of options
-  const optionsLength = currentQuestion.options.length;
+  // set choices
+  // get the length of the list of choices
+  const choicesLength = currentQuestion.choices.length;
 
-  optionContainer.innerHTML = "";
+  choicesContainer.innerHTML = "";
 
-  // push options into availableOptions array
+  // push choices into availableChoices array
 
-  for (let i = 0; i < optionsLength; i++) {
-    availableOptions.push(i);
+  for (let i = 0; i < choicesLength; i++) {
+    availableChoices.push(i);
   }
 
-  //create options in html
+  //create choices in html
   let animationDelay = 0.1;
 
-  for (let i = 0; i < optionsLength; i++) {
-    const optionIndex =
-      availableOptions[Math.floor(Math.random() * availableOptions.length)];
+  for (let i = 0; i < choicesLength; i++) {
+    const choicesIndex =
+      availableChoices[Math.floor(Math.random() * availableChoices.length)];
 
-    //get the position of optionIndex from availableOptions
+    //get the position of choicesIndex from availableChoices
 
-    const index2 = availableOptions.indexOf(optionIndex);
+    const index2 = availableChoices.indexOf(choicesIndex);
 
-    //remove the “optionIndex” from the availableOptions so that the option does not repeat
+    //remove the “choicesIndex” from the availableChoices so that the choice does not repeat
 
-    availableOptions.splice(index2, 1);
+    availableChoices.splice(index2, 1);
 
-    const option = document.createElement("button");
-    option.innerHTML = currentQuestion.options[optionIndex];
-    option.id = optionIndex;
-    option.style.animationDelay = animationDelay + "s";
-    option.tabIndex = i + 1;
-    console.log(option.tabIndex);
+    const choice = document.createElement("button");
+    choice.innerHTML = currentQuestion.choices[choicesIndex];
+    choice.id = choicesIndex;
+    choice.style.animationDelay = animationDelay + "s";
 
     animationDelay = animationDelay + 0.1;
 
-    option.className = "option";
-    optionContainer.appendChild(option);
-    option.setAttribute("onclick", "getResult(this)");
+    choice.className = "choice";
+    choicesContainer.appendChild(choice);
+    choice.setAttribute("onclick", "getResult(this)");
 
-    option.addEventListener("keydown", pressEnterToGetResult);
+    // choice.addEventListener("keydown", pressEnterToGetResult);
 
-    function pressEnterToGetResult(e) {
-      if (e.key == "Enter") {
-        option.removeEventListener("keydown", pressEnterToGetResult);
-        getResult(this);
-        unclickableOptions();
-      }
-    }
+    // function pressEnterToGetResult(e) {
+    //   if (e.key == "Enter") {
+    //     option.removeEventListener("keydown", pressEnterToGetResult);
+    //     getResult(this);
+    //     unclickableOptions();
+    //   }
+    // }
   }
+  choicesContainer.children[0].setAttribute("autofocus", "autofocus");
+  nextButton.tabIndex = 1;
   questionCounter++;
 }
 
 function getResult(element) {
   unclickableOptions();
   const id = parseInt(element.id);
-  //get the answer by comparing the id of the clicked option
+  //get the answer by comparing the id of the clicked choice
   if (id === currentQuestion.answer) {
-    // add green colour if user selects correct option
+    // add green colour if user selects correct choice
     element.classList.add("correct");
     //add a tick mark to the answer indicator
     updateAnswerIndicator("correct");
     correctAnswers++;
 
-    // availableOptions.removeEventListener("keydown", pressEnterToGetResult);
   } else {
-    // add red colour if user selects incorrect option
+    // add red colour if user selects incorrect choice
     element.classList.add("incorrect");
     //add a cross mark to the answer indicator
     updateAnswerIndicator("incorrect");
 
     //if answer is incorrect then show the correct answer
-    const optionsLength = optionContainer.children.length;
-    for (let i = 0; i < optionsLength; i++) {
+    const choicesLength = choicesContainer.children.length;
+    for (let i = 0; i < choicesLength; i++) {
       setTimeout(() => {
         if (
-          parseInt(optionContainer.children[i].id) === currentQuestion.answer
+          parseInt(choicesContainer.children[i].id) === currentQuestion.answer
         ) {
-          optionContainer.children[i].classList.add("correct");
+          choicesContainer.children[i].classList.add("correct");
         }
       }, 400);
     }
   }
   attempt++;
-  // document.addEventListener("keydown", pressEnterForNextQu);
-  // next();
-  nextButton.classList.remove("hide");
+    nextButton.classList.remove("hide");
 }
 
 //add shortcut key for the return key to go to the next question
@@ -168,12 +169,12 @@ function pressEnterForNextQu(e) {
   }
 }
 
-//make other options unclickable once user has selected an option
+//make other choices unclickable once user has selected a choice
 function unclickableOptions() {
-  const optionsLength = optionContainer.children.length;
-  for (let i = 0; i < optionsLength; i++) {
-    optionContainer.children[i].classList.add("already-answered");
-    optionContainer.children[i].setAttribute("disabled", "");
+  const choicesLength = choicesContainer.children.length;
+  for (let i = 0; i < choicesLength; i++) {
+    choicesContainer.children[i].classList.add("already-answered");
+    choicesContainer.children[i].setAttribute("disabled", "");
   }
 }
 
