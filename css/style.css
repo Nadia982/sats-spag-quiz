@@ -62,7 +62,7 @@
     display: block;
     width: 100%;
     text-align: left;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
   }
   
   button:disabled{
@@ -212,7 +212,7 @@
   }
   
   .quiz-box .choices-container .choice:focus {
-    border: 1px solid black;
+    outline: 2px solid black;
   }
   
   .quiz-box .choices-container .choice:hover {
