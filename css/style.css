@@ -127,7 +127,7 @@
     font-size: 1.2rem;
     color: #000;
     line-height: var(--line-height);
-    font-weight: 700;  
+    /* font-weight: 700;   */
   }
 
   .quiz-box .question-text-2{
@@ -135,11 +135,17 @@
     margin-top: 1rem;
   }
   
-  .quiz-box em {
+  .quiz-box .underline {
     font-size: 1.2rem;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
+    font-style: normal;
+  }
+
+  .quiz-box .bold {
+    font-size: 1.2rem;
+    font-weight: bold;
     font-style: normal;
   }
 
