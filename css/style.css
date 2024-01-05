@@ -60,6 +60,7 @@ button.choice {
   width: 100%;
   text-align: left;
   border: 1px solid #ccc;
+  color:#000;
 }
 
 button:disabled {
@@ -99,6 +100,7 @@ button:disabled {
 }
 
 .next-btn {
+  padding: 1rem;
   margin-bottom: 0.7rem;
 }
 
