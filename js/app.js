@@ -240,8 +240,7 @@ function displayQuestions() {
         " " +
         questionsAskedList[i].q3;
     } else if (questionsAskedList[i].hasOwnProperty("q2")) {
-      questionAskedCell.innerHTML =
-        questionsAskedList[i].q + " " + questionsAskedList[i].q2;
+      questionAskedCell.innerHTML = `${questionsAskedList[i].q} ${questionsAskedList[i].q2}`;
     } else {
       questionAskedCell.innerHTML = questionsAskedList[i].q;
     }

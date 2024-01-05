@@ -138,7 +138,7 @@
     font-size: 1.2rem;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
+    text-underline-offset: 3px;
     font-style: normal;
   }
 
@@ -280,8 +280,13 @@
   .result-box table td {
     border: 1px solid #ccc;
     text-align: left;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
   }
+
+  .result-box table th, .result-box table td, .result-box table td em {
+    font-size: .8rem;
+  }
+
   .btn-container {
     display: flex;
     gap: 1rem;
