@@ -12,8 +12,7 @@ const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
 const nextButton = document.querySelector(".next-btn");
 const questionLimit = 2;
-const questionsAskedContainer = document.querySelector(
-  ".questions-asked-container"
+const questionsAskedContainer = document.querySelector(".questions-asked-container"
 );
 
 let questionCounter = 0;
@@ -23,6 +22,7 @@ let availableChoices = [];
 let correctAnswers = 0;
 let attempt = 0;
 let questionsAskedList = [];
+let yourAnswersList = [];
 
 startBtn.tabIndex = 1;
 attributionLink.tabIndex = 0;
@@ -37,7 +37,7 @@ function setAvailableQuestions() {
 
 //set question number, question text and answer choices
 function getNewQuestion() {
-    nextButton.classList.add("hide");
+  nextButton.classList.add("hide");
   //set question number
   questionNumber.innerHTML = `Question ${
     questionCounter + 1
@@ -136,6 +136,9 @@ function getNewQuestion() {
 function getResult(element) {
   unclickableOptions();
   const id = parseInt(element.id);
+  const answerText = element.textContent;
+  yourAnswersList.push(answerText);
+  console.log(yourAnswersList);
   //get the answer by comparing the id of the clicked choice
   if (id === currentQuestion.answer) {
     // add green colour if user selects correct choice
@@ -222,26 +225,43 @@ function showResult() {
 }
 
 function displayQuestions() {
-  // console.log(questionsAskedList);
   for (let i = 0; i < questionsAskedList.length; i++) {
-    const questionAsked = document.createElement("li");
+    const questionRow = document.createElement("tr");
+
+    const questionNoCell = document.createElement("td")
+    questionNoCell.textContent = i+1;
+
+    const questionAskedCell = document.createElement("td");
     if (questionsAskedList[i].hasOwnProperty("q3")) {
-      questionAsked.innerHTML =
-        questionsAskedList[i].q + " " +
-        questionsAskedList[i].q2 +  " " +
+      questionAskedCell.innerHTML =
+        questionsAskedList[i].q +
+        " " +
+        questionsAskedList[i].q2 +
+        " " +
         questionsAskedList[i].q3;
     } else if (questionsAskedList[i].hasOwnProperty("q2")) {
-      questionAsked.innerHTML =
+      questionAskedCell.innerHTML =
         questionsAskedList[i].q + " " + questionsAskedList[i].q2;
     } else {
-      questionAsked.innerHTML = questionsAskedList[i].q;
+      questionAskedCell.innerHTML = questionsAskedList[i].q;
     }
-    questionsAskedContainer.appendChild(questionAsked);
+
+    const yourAnswerCell = document.createElement("td");
+    yourAnswerCell.innerHTML = yourAnswersList[i];
+    const correctAnswerCell = document.createElement("td");
+    correctAnswerCell.innerHTML = questionsAskedList[i].choices[questionsAskedList[i].answer];
+    // console.log(correctAnswer);
+    questionRow.appendChild(questionNoCell);    
+    questionRow.appendChild(questionAskedCell);
+    questionRow.appendChild(yourAnswerCell);
+    questionRow.appendChild(correctAnswerCell);
+    //Add the new row to questionsAskedContainer
+    questionsAskedContainer.appendChild(questionRow);
   }
 }
 
-function removeQuestions(){
-  questionsAskedContainer.textContent = '';
+function removeQuestions() {
+  questionsAskedContainer.textContent = "";
 }
 
 function resetQuiz() {
@@ -250,10 +270,10 @@ function resetQuiz() {
   attempt = 0;
   availableQuestions = [];
   removeQuestions();
-  }
+}
 
 function tryAgainQuiz() {
-    //hide the result box
+  //hide the result box
   resultBox.classList.add("hide");
 
   //show the quiz box

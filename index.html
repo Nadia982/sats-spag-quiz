@@ -40,10 +40,18 @@
         <p class="total-score-heading">Total score:</p>
         <p class="total-score"></p>
       </div>
-      
-      <ol class="questions-asked-container">
 
-      </ol>
+      <table>
+        <tr>
+          <th>No.</th>
+          <th>Question</th>
+          <th>Your Answer</th>
+          <th>Correct Answer</th>
+        </tr>
+        <tbody class="questions-asked-container">
+
+        </tbody>
+      </table>
       <div class="btn-container">
         <button type="button" class="btn" onclick="tryAgainQuiz()">
           Try again
@@ -56,7 +64,9 @@
     <p class="attribution">
       The questions on this website contain public sector information licensed
       under the
-      <a class="attribution-link" tabIndex = -1
+      <a
+        class="attribution-link"
+        tabindex="-1"
         href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
         >Government Licence v3.0</a
       >
