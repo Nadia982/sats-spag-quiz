@@ -11,7 +11,10 @@ const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
 const nextButton = document.querySelector(".next-btn");
-const questionLimit = 10;
+const questionLimit = 2;
+const questionsAskedContainer = document.querySelector(
+  ".questions-asked-container"
+);
 
 let questionCounter = 0;
 let currentQuestion;
@@ -19,7 +22,7 @@ let availableQuestions = [];
 let availableChoices = [];
 let correctAnswers = 0;
 let attempt = 0;
-let questionsAsked = [];
+let questionsAskedList = [];
 
 startBtn.tabIndex = 1;
 attributionLink.tabIndex = 0;
@@ -34,7 +37,7 @@ function setAvailableQuestions() {
 
 //set question number, question text and answer choices
 function getNewQuestion() {
-  nextButton.classList.add("hide");
+    nextButton.classList.add("hide");
   //set question number
   questionNumber.innerHTML = `Question ${
     questionCounter + 1
@@ -46,8 +49,7 @@ function getNewQuestion() {
   currentQuestion = questionIndex;
   //set question text
   questionText.innerHTML = currentQuestion.q;
-  questionsAsked.push(currentQuestion.q);
-  console.log(questionsAsked);
+  questionsAskedList.push(currentQuestion);
 
   // get the position of "QuestionIndex" from the "AvailableQuestions" array
 
@@ -209,21 +211,37 @@ function quizOver() {
   quizBox.classList.add("hide");
   //show resultBox
   resultBox.classList.remove("hide");
-  quizResult();
+  showResult();
 }
 
 //get the quiz result
-function quizResult() {
-  // resultBox.querySelector(".total-question").innerHTML = questionLimit;
-  // resultBox.querySelector(".total-attempts").innerHTML = attempt;
-  // resultBox.querySelector(".correct-answers").innerHTML = correctAnswers;
-  // resultBox.querySelector(".wrong-answers").innerHTML =
-  //   attempt - correctAnswers;
-  // const percentage = (correctAnswers / questionLimit) * 100;
-  // resultBox.querySelector(".percent-correct").innerHTML =
-  //   percentage.toFixed(0) + "%";
+function showResult() {
   resultBox.querySelector(".total-score").innerHTML =
     correctAnswers + "/" + questionLimit;
+  displayQuestions();
+}
+
+function displayQuestions() {
+  // console.log(questionsAskedList);
+  for (let i = 0; i < questionsAskedList.length; i++) {
+    const questionAsked = document.createElement("li");
+    if (questionsAskedList[i].hasOwnProperty("q3")) {
+      questionAsked.innerHTML =
+        questionsAskedList[i].q + " " +
+        questionsAskedList[i].q2 +  " " +
+        questionsAskedList[i].q3;
+    } else if (questionsAskedList[i].hasOwnProperty("q2")) {
+      questionAsked.innerHTML =
+        questionsAskedList[i].q + " " + questionsAskedList[i].q2;
+    } else {
+      questionAsked.innerHTML = questionsAskedList[i].q;
+    }
+    questionsAskedContainer.appendChild(questionAsked);
+  }
+}
+
+function removeQuestions(){
+  questionsAskedContainer.textContent = '';
 }
 
 function resetQuiz() {
@@ -231,15 +249,16 @@ function resetQuiz() {
   correctAnswers = 0;
   attempt = 0;
   availableQuestions = [];
-}
+  removeQuestions();
+  }
 
 function tryAgainQuiz() {
-  //hide the result box
+    //hide the result box
   resultBox.classList.add("hide");
 
   //show the quiz box
   quizBox.classList.remove("hide");
-
+  questionsAskedList = [];
   resetQuiz();
   startQuiz();
 }
