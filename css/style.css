@@ -281,10 +281,24 @@
     border: 1px solid #ccc;
     text-align: left;
     padding: 0.2rem 0.5rem;
+    vertical-align: top;
+  }
+
+  .result-box table td.correct, .result-box table td.incorrect {
+    text-align: center;
+    vertical-align: middle;
   }
 
   .result-box table th, .result-box table td, .result-box table td em {
     font-size: .8rem;
+  }
+
+  table td.correct {
+    background-color: rgb(34, 177, 76);
+  }
+
+  table td.incorrect {
+    background-color: red;  
   }
 
   .btn-container {

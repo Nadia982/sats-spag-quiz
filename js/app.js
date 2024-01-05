@@ -226,11 +226,14 @@ function showResult() {
 
 function displayQuestions() {
   for (let i = 0; i < questionsAskedList.length; i++) {
+    //create table row for each question
     const questionRow = document.createElement("tr");
 
+    //create a cell to show the question number
     const questionNoCell = document.createElement("td")
     questionNoCell.textContent = i+1;
 
+    //create a cell to show the question text
     const questionAskedCell = document.createElement("td");
     if (questionsAskedList[i].hasOwnProperty("q3")) {
       questionAskedCell.innerHTML =
@@ -245,15 +248,30 @@ function displayQuestions() {
       questionAskedCell.innerHTML = questionsAskedList[i].q;
     }
 
+    // create a table cell to show the given answer
     const yourAnswerCell = document.createElement("td");
     yourAnswerCell.innerHTML = yourAnswersList[i];
+    
+    //create a table cell to show the correct answer
     const correctAnswerCell = document.createElement("td");
     correctAnswerCell.innerHTML = questionsAskedList[i].choices[questionsAskedList[i].answer];
-    // console.log(correctAnswer);
+    
+    //create a table cell to show if the given answer was right or wrong
+    const resultCell = document.createElement("td");
+    // resultCell.innerHTML = "<p>Hello</p>";
+    if(yourAnswerCell.innerHTML === correctAnswerCell.innerHTML) {
+      resultCell.innerHTML = "<img src='./images/correct.png' width='30'/>";
+      resultCell.classList.add("correct");
+    } else {
+      resultCell.innerHTML = "<img src='./images/incorrect.png' width='20'/>";
+      resultCell.classList.add("incorrect");
+    }
+    //append the created cells to the question row
     questionRow.appendChild(questionNoCell);    
     questionRow.appendChild(questionAskedCell);
     questionRow.appendChild(yourAnswerCell);
     questionRow.appendChild(correctAnswerCell);
+    questionRow.appendChild(resultCell);
     //Add the new row to questionsAskedContainer
     questionsAskedContainer.appendChild(questionRow);
   }
