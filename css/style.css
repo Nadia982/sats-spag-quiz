@@ -361,12 +361,12 @@ table td.incorrect {
   td {
     display: block;
   }
-
-  tr::after{
+  tr:not(:first-child)::before {
     content: "\A"; 
     white-space: pre;
-  }
 
+  }
+  
   td::before{
     content: attr(data-cell);
     font-weight: bold;
