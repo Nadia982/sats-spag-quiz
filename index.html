@@ -36,32 +36,14 @@
     </div>
     <div class="result-box custom-box hide">
       <h1>Quiz results</h1>
-      <table>
-        <tr>
-          <td>Total questions</td>
-          <td><span class="total-question"></span></td>
-        </tr>
-        <tr>
-          <td>Questions attempted</td>
-          <td><span class="total-attempts"></span></td>
-        </tr>
-        <tr>
-          <td>Correct answers</td>
-          <td><span class="correct-answers"></span></td>
-        </tr>
-        <tr>
-          <td>Wrong answers</td>
-          <td><span class="wrong-answers"></span></td>
-        </tr>
-        <tr>
-          <td>Percent correct</td>
-          <td><span class="percent-correct"></span></td>
-        </tr>
-        <tr>
-          <td>Total score</td>
-          <td><span class="total-score"></span></td>
-        </tr>
-      </table>
+      <div class="total-score-container">
+        <p class="total-score-heading">Total score:</p>
+        <p class="total-score"></p>
+      </div>
+      
+      <div class="questions-asked">
+
+      </div>
       <div class="btn-container">
         <button type="button" class="btn" onclick="tryAgainQuiz()">
           Try again

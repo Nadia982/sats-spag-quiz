@@ -80,7 +80,7 @@
     font-size: 1.2rem;
   }
   
-  .home-box p span {
+  .home-box p span, .total-score-heading {
     font-weight: 700;
   }
   
@@ -311,6 +311,13 @@
     border: 1px solid #00004d;
     color: #00004d;
     background-color: #fff;
+  }
+
+  .total-score-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem auto;
   }
   
   @media(max-width: 768px){
