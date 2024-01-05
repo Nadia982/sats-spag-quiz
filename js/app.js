@@ -232,6 +232,7 @@ function displayQuestions() {
     //create a cell to show the question number
     const questionNoCell = document.createElement("td")
     questionNoCell.textContent = i+1;
+    questionNoCell.setAttribute("data-cell", "Question no: ");
 
     //create a cell to show the question text
     const questionAskedCell = document.createElement("td");
@@ -247,23 +248,26 @@ function displayQuestions() {
     } else {
       questionAskedCell.innerHTML = questionsAskedList[i].q;
     }
+    questionAskedCell.setAttribute("data-cell", "Question: ");
 
     // create a table cell to show the given answer
     const yourAnswerCell = document.createElement("td");
     yourAnswerCell.innerHTML = yourAnswersList[i];
+    yourAnswerCell.setAttribute("data-cell", "You answered: ");
     
     //create a table cell to show the correct answer
     const correctAnswerCell = document.createElement("td");
     correctAnswerCell.innerHTML = questionsAskedList[i].choices[questionsAskedList[i].answer];
-    
+    correctAnswerCell.setAttribute("data-cell", "Correct answer: ");
+
     //create a table cell to show if the given answer was right or wrong
     const resultCell = document.createElement("td");
     // resultCell.innerHTML = "<p>Hello</p>";
     if(yourAnswerCell.innerHTML === correctAnswerCell.innerHTML) {
-      resultCell.innerHTML = "<img src='./images/correct.png' width='30'/>";
+      resultCell.innerHTML = "<img src='./images/correct.png' alt = 'correct' width='30'/>";
       resultCell.classList.add("correct");
     } else {
-      resultCell.innerHTML = "<img src='./images/incorrect.png' width='20'/>";
+      resultCell.innerHTML = "<img src='./images/incorrect.png' alt = 'incorrect' width='20'/>";
       resultCell.classList.add("incorrect");
     }
     //append the created cells to the question row
