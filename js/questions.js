@@ -431,7 +431,8 @@ const questions = [
   // {
   //   id: 44,
   //   q: "Below is a sentence containing an apostrophe followed by a statement about the sentence. Choose whether the statement is true or false.", 
-  //   q2: "'Gina put out the cats' food.' There is more than one cat.",
+  //   q2: "'Gina put out the cats' food.'",
+  // q3: " There is more than one cat.",
   //   choices: ["true", "false"],
   //   answer: 0,
   //   questionRef: "2022-paper1-q45a",
@@ -439,7 +440,8 @@ const questions = [
   // {
   //   id: 45,
   //   q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false.", 
-  //   q2: "'The girl's party is this afternoon.' There is more than one girl.",
+  //   q2: "'The girl's party is this afternoon.'",
+  // q3: "There is more than one girl.",
   //   choices: ["true", "false"],
   //   answer: 1,
   //   questionRef: "2022-paper1-q45b",
@@ -447,7 +449,8 @@ const questions = [
   // {
   //   id: 46,
   //   q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false.", 
-  //   q2: "'The trees' leaves were green.' There is only one tree.",
+  //   q2: "'The trees' leaves were green.'",
+  // q3: "There is only one tree.",
   //   choices: ["true", "false"],
   //   answer: 1,
   //   questionRef: "2022-paper1-q45c",
@@ -455,7 +458,8 @@ const questions = [
   // {
   //   id: 47,
   //   q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false.", 
-  //   q2: "'The boys' lunch was delicious.' There is only one boy.",
+  //   q2: "'The boys' lunch was delicious.'",
+      // q3: "There is only one boy.",
   //   choices: ["true", "false"],
   //   answer: 1,
   //   questionRef: "2022-paper1-q45d",
