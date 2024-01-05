@@ -19,6 +19,7 @@ let availableQuestions = [];
 let availableChoices = [];
 let correctAnswers = 0;
 let attempt = 0;
+let questionsAsked = [];
 
 startBtn.tabIndex = 1;
 attributionLink.tabIndex = 0;
@@ -38,14 +39,15 @@ function getNewQuestion() {
   questionNumber.innerHTML = `Question ${
     questionCounter + 1
   } of ${questionLimit}`;
-  //set question text
+
   //get random question
   const questionIndex =
     availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
   currentQuestion = questionIndex;
+  //set question text
   questionText.innerHTML = currentQuestion.q;
-
-  
+  questionsAsked.push(currentQuestion.q);
+  console.log(questionsAsked);
 
   // get the position of "QuestionIndex" from the "AvailableQuestions" array
 
@@ -60,13 +62,13 @@ function getNewQuestion() {
   if (currentQuestion.hasOwnProperty("q2")) {
     const q2 = document.createElement("p");
     q2.innerHTML = currentQuestion.q2;
-    q2.setAttribute("class","question-text-2");
+    q2.setAttribute("class", "question-text-2");
     questionText.appendChild(q2);
   }
   if (currentQuestion.hasOwnProperty("q3")) {
     const q3 = document.createElement("p");
     q3.innerHTML = currentQuestion.q3;
-    q3.setAttribute("class","question-text-2");
+    q3.setAttribute("class", "question-text-2");
     questionText.appendChild(q3);
   }
 
@@ -139,7 +141,6 @@ function getResult(element) {
     //add a tick mark to the answer indicator
     updateAnswerIndicator("correct");
     correctAnswers++;
-
   } else {
     // add red colour if user selects incorrect choice
     element.classList.add("incorrect");
@@ -159,7 +160,7 @@ function getResult(element) {
     }
   }
   attempt++;
-    nextButton.classList.remove("hide");
+  nextButton.classList.remove("hide");
 }
 
 //add shortcut key for the return key to go to the next question
@@ -199,7 +200,7 @@ function next() {
   if (questionCounter >= questionLimit) {
     quizOver();
   } else {
-      getNewQuestion();
+    getNewQuestion();
   }
 }
 
@@ -213,14 +214,14 @@ function quizOver() {
 
 //get the quiz result
 function quizResult() {
-  resultBox.querySelector(".total-question").innerHTML = questionLimit;
-  resultBox.querySelector(".total-attempts").innerHTML = attempt;
-  resultBox.querySelector(".correct-answers").innerHTML = correctAnswers;
-  resultBox.querySelector(".wrong-answers").innerHTML =
-    attempt - correctAnswers;
-  const percentage = (correctAnswers / questionLimit) * 100;
-  resultBox.querySelector(".percent-correct").innerHTML =
-    percentage.toFixed(0) + "%";
+  // resultBox.querySelector(".total-question").innerHTML = questionLimit;
+  // resultBox.querySelector(".total-attempts").innerHTML = attempt;
+  // resultBox.querySelector(".correct-answers").innerHTML = correctAnswers;
+  // resultBox.querySelector(".wrong-answers").innerHTML =
+  //   attempt - correctAnswers;
+  // const percentage = (correctAnswers / questionLimit) * 100;
+  // resultBox.querySelector(".percent-correct").innerHTML =
+  //   percentage.toFixed(0) + "%";
   resultBox.querySelector(".total-score").innerHTML =
     correctAnswers + "/" + questionLimit;
 }
