@@ -136,7 +136,7 @@ function getNewQuestion() {
 function getResult(element) {
   unclickableOptions();
   const id = parseInt(element.id);
-  const answerText = element.textContent;
+  const answerText = element.innerHTML;
   yourAnswersList.push(answerText);
   console.log(yourAnswersList);
   //get the answer by comparing the id of the clicked choice
@@ -269,17 +269,19 @@ function resetQuiz() {
   correctAnswers = 0;
   attempt = 0;
   availableQuestions = [];
+  questionsAskedList = [];
+  yourAnswersList = [];
   removeQuestions();
 }
 
 function tryAgainQuiz() {
   //hide the result box
   resultBox.classList.add("hide");
-
   //show the quiz box
   quizBox.classList.remove("hide");
-  questionsAskedList = [];
+    //reset Quiz
   resetQuiz();
+  //start Quiz
   startQuiz();
 }
 
@@ -288,6 +290,7 @@ function goToHome() {
   resultBox.classList.add("hide");
   // show home box
   homeBox.classList.remove("hide");
+  //reset Quiz
   resetQuiz();
 }
 
