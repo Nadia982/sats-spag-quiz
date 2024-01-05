@@ -11,7 +11,7 @@ const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
 const nextButton = document.querySelector(".next-btn");
-const questionLimit = 10;
+const questionLimit = 2;
 const questionsAskedContainer = document.querySelector(".questions-asked-container"
 );
 
@@ -244,7 +244,9 @@ function displayQuestions() {
         " " +
         questionsAskedList[i].q3;
     } else if (questionsAskedList[i].hasOwnProperty("q2")) {
-      questionAskedCell.innerHTML = `${questionsAskedList[i].q} ${questionsAskedList[i].q2}`;
+      let q2QuestionContents = questionsAskedList[i].q + " " + questionsAskedList[i].q2;
+      console.log(q2QuestionContents);
+      questionAskedCell.innerHTML = q2QuestionContents; 
     } else {
       questionAskedCell.innerHTML = questionsAskedList[i].q;
     }
