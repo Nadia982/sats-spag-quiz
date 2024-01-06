@@ -1,7 +1,7 @@
 const questions = [
   {
     id: 1,
-    q: "Which sentence is a command?",
+    q: "Which sentence is a <em class='bold'>command</em>?",
     choices: [
       "The relay race will be next.",
       "I hope I don't drop the baton.",
@@ -13,7 +13,7 @@ const questions = [
   },
   {
     id: 2,
-    q: "Is this sentence an exclamation or a question?",
+    q: "Is this sentence an <em class='bold'>exclamation</em> or a <em class='bold'>question</em>?",
     q2: "'How disappointing it was that it rained on sports day'",
     choices: ["Exclamation", "Question"],
     answer: 0,
@@ -49,7 +49,7 @@ const questions = [
 
   {
     id: 6,
-    q: "Which sentence is written in standard English?",
+    q: "Which sentence is written in <em class='bold'>Standard English</em>?",
     choices: [
       "The autumn leaves was crunching beneath our feet as we walked along.",
       "The autumn leaves were crunching beneath our feet as we walked along.",
@@ -60,7 +60,7 @@ const questions = [
 
   {
     id: 7,
-    q: "Which sentence is written in standard English?",
+    q: "Which sentence is written in <em class='bold'>Standard English</em>?",
     choices: [
       "We done a great job in picking the juiciest fruit for our pie.",
       "We did a great job in picking the juiciest fruit for our pie.",
@@ -71,7 +71,7 @@ const questions = [
 
   {
     id: 8,
-    q: "Which sentence is written in standard English?",
+    q: "Which sentence is written in <em class='bold'>Standard English</em>?",
     choices: [
       "My brother didn't do anything to help us.",
       "My brother didn't do nothing to help us.",
@@ -81,7 +81,7 @@ const questions = [
   },
   {
     id: 9,
-    q: "Which pair of words are antonyms?",
+    q: "Which pair of words are <em class='bold'>antonyms</em>?",
     choices: [
       "marine submarine",
       "unicycle bicycle",
@@ -93,7 +93,7 @@ const questions = [
   },
   {
     id: 11,
-    q: "Which sentence is the most formal?",
+    q: "Which sentence is the most <em class='bold'>formal</em>?",
     choices: [
       "We can't keep your things here, as there's no room.",
       "It is essential that you take all your belongings with you.",
@@ -117,19 +117,19 @@ const questions = [
   },
   {
     id: 13,
-    q: "In which sentence is plant a verb?",
+    q: "In which sentence is <em class='underline'>plant</em> a <em class='bold'>verb</em>?",
     choices: [
-      "The recycling plant was closed for the weekend.",
-      "The children plant beans in the school garden.",
-      "I remember to water my plant every day.",
-      "The roses were growing in a plant pot.",
+      "The recycling <em class='underline'>plant</em> was closed for the weekend.",
+      "The children <em class='underline'>plant</em> beans in the school garden.",
+      "I remember to water my <em class='underline'>plant</em> every day.",
+      "The roses were growing in a <em class='underline'>plant</em> pot.",
     ],
     answer: 1,
     questionRef: "2023-paper1-q12",
   },
   {
     id: 14,
-    q: "Which sentence is the most formal?",
+    q: "Which sentence is the most <em class='bold'>formal</em>?",
     choices: [
       "I asked him to phone me when he got here.",
       "I told him to call me as soon as he turned up.",
@@ -141,7 +141,7 @@ const questions = [
   },
   {
     id: 15,
-    q: "Is the apostrophe in this sentence used for a contracted form or possession?", 
+    q: "Is the apostrophe in this sentence used for a <em class='bold'>contracted form</em> or <em class='bold'>possession</em>?", 
     q2: "'Let's hope it warms up soon.'",
     choices: ["Contracted form", "Possession"],
     answer: 0,
@@ -149,7 +149,7 @@ const questions = [
   },
   {
     id: 16,
-    q: "Is the apostrophe in this sentence used for a contracted form or possession?",
+    q: "Is the apostrophe in this sentence used for a <em class='bold'>contracted form</em> or <em class='bold'>possession</em>?",
     q2: "'The teachers' coats were hanging in the staffroom.'",
     choices: ["Contracted form", "Possession"],
     answer: 1,
@@ -157,7 +157,7 @@ const questions = [
   },
   {
     id: 17,
-    q: "Is the apostrophe in this sentence used for a contracted form or possession?", 
+    q: "Is the apostrophe in this sentence used for a <em class='bold'>contracted form</em> or <em class='bold'>possession</em>?",
     q2: "'The children wear their scarves when it's cold.'",
     choices: ["Contracted form", "Possession"],
     answer: 0,
@@ -165,7 +165,7 @@ const questions = [
   },
   {
     id: 18,
-    q: "Which option completes the sentence using the present progressive?", 
+    q: "Which option completes the sentence using the <em class='bold'>present progressive</em>?", 
     q2:"'I _________ the photos to the school website.'",
     choices: ["upload", "will upload", "have uploaded", "am uploading"],
     answer: 3,
@@ -173,7 +173,7 @@ const questions = [
   },
   {
     id: 19,
-    q: "Which sentence uses tense correctly?",
+    q: "Which sentence uses <em class='bold'>tense</em> correctly?",
     choices: [
       "She is getting the ball and then she scored the winning goal.",
       "My friends thought the film was good, but I don't like thrillers.",
@@ -210,7 +210,7 @@ const questions = [
   },
   {
     id: 22,
-    q: "Which sentence uses a semi-colon correctly?",
+    q: "Which sentence uses a <em class='bold'>semi-colon</em> correctly?",
     choices: [
       "In the bag we found; five carrots, two cabbages and a large onion.",
       "The book began with a boy called Tim; climbing a steep hill.",
@@ -222,31 +222,31 @@ const questions = [
   },
   {
     id: 23,
-    q: "Is <em>once</em> an adverb or a conjuction in the sentence below?", 
-    q2: "'I've only been to France <em>once</em> with my family.'",
+    q: "Is <em class='underline'>once</em> an <em class='bold'>adverb</em> or a <em class='bold'>conjunction</em> in the sentence below?", 
+    q2: "'I've only been to France <em class='underline'>once</em> with my family.'",
     choices: ["adverb", "conjunction"],
     answer: 0,
     questionRef: "2023-paper1-q50a",
   },
   {
     id: 24,
-    q: "Is <em>once</em> an adverb or a conjunction in this sentence?", 
-    q2: "'<em>Once</em> I arrived in Paris, I tried to speak French.'",
+    q: "Is <em class='underline'>once</em> an <em class='bold'>adverb</em> or a <em class='bold'>conjunction</em> in the sentence below?",  
+    q2: "'<em class='underline'>Once</em> I arrived in Paris, I tried to speak French.'",
     choices: ["adverb", "conjunction"],
     answer: 1,
     questionRef: "2023-paper1-q50b",
   },
   {
     id: 25,
-    q: "Is <em>once</em> an adverb or a conjunction in this sentence?", 
-    q2: "'My accent really improved <em>once</em> we had been there a few days.'",
+    q: "Is <em class='underline'>once</em> an <em class='bold'>adverb</em> or a <em class='bold'>conjunction</em> in the sentence below?", 
+    q2: "'My accent really improved <em class='underline'>once</em> we had been there a few days.'",
     choices: ["adverb", "conjunction"],
     answer: 1,
     questionRef: "2023-paper1-q50c",
   },
   {
     id: 26,
-    q: "Which sentence must end with a question mark? Select one.",
+    q: "Which sentence must end with a <em class='bold'>question mark</em>? Select one.",
     choices: [
       "Shall we go round the fitness trail in the park",
       "We could go tomorrow if you like",
@@ -270,7 +270,7 @@ const questions = [
   },
   {
     id: 28,
-    q: "Which sentence uses commas correctly?",
+    q: "Which sentence uses <em class='bold'>commas</em> correctly?",
     choices: [
       "The band will perform at concerts in Belfast, Manchester, Birmingham, Nottingham and, Sheffield.",
       "The children could choose to play netball, cricket, hockey or tennis.",
@@ -306,16 +306,16 @@ const questions = [
   },
   {
     id: 31,
-    q: "What does the word 'them' refer to in the sentence below?", 
-    q2: "'Although deserts are very dry, a rich variety of plants and animals can survive in them.'",
+    q: "What does the word <em class='underline'>them</em> refer to in the sentence below?", 
+    q2: "Although deserts are very dry, a rich variety of plants and animals can survive in <em class='underline'>them</em>.",
     choices: ["deserts", "variety", "plants", "animals"],
     answer: 0,
     questionRef: "2022-paper1-q10",
   },
   {
     id: 32,
-    q: "What is the word class of the underlined words?",
-    q2: "I have two brothers. Brian is <em>older</em> and Stanley is <em>younger</em> than me.",
+    q: "What is the <em class='bold'>word class</em> of the underlined words?",
+    q2: "I have two brothers. Brian is <em class='underline'>older</em> and Stanley is <em class='underline'>younger</em> than me.",
     choices: ["adjective", "noun", "adverb", "verb"],
     answer: 0,
     questionRef: "2022-paper1-q15",
@@ -341,8 +341,8 @@ const questions = [
   },
   {
     id: 35,
-    q: "What is the word class of the underlined words?", 
-    q2: "The <em>erosive</em> force of the sea <em>erodes</em> the coastline.",
+    q: "What are the <em class='bold'>word classes</em> of the underlined words?", 
+    q2: "The <em class='underline'>erosive</em> force of the sea <em class='underline'>erodes</em> the coastline.",
     choices: ["noun adjective", "adjective verb", "noun verb", "adjective adverb"],
     answer: 1,
     questionRef: "2022-paper1-q26",
@@ -357,7 +357,7 @@ const questions = [
   },
   {
     id: 37,
-    q: "How does the use of the passive in the second sentence affect the way the information is presented?",
+    q: "How does the use of the <em class='underline'>passive</em> in the second sentence affect the way the information is presented?",
     q2: "1. Max dropped the red bucket.",
     q3: "2. The red bucket was dropped.",
     choices: ["It does not say who dropped the bucket.", "It shows that the action happened in the past.", "It shows that it was an accident.", "It does not say why the bucket was dropped."],
@@ -366,7 +366,7 @@ const questions = [
   },
   {
     id: 38,
-    q: "Which option makes the sentence start with an adverbial?", 
+    q: "Which option makes the sentence start with an <em class='bold'>adverbial</em>?", 
     q2: "_________ we lined up for the class photo.",
     choices: ["It was noisy and crowded, but", "The photographer arrived while", "With big smiles on our faces,", "The whole class were ready so"],
     answer: 2,
@@ -374,7 +374,7 @@ const questions = [
   },
   {
     id: 39,
-    q: "Is the following sentence standard or non-standard English?", 
+    q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?", 
     q2: "'I were going to keep the picture to show you.'",
     choices: ["standard", "non-standard"],
     answer: 1,
@@ -382,7 +382,7 @@ const questions = [
   },
   {
     id: 40,
-    q: "Is the following sentence standard or non-standard English?", 
+    q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?",
     q2: "'We was helping to design the new school building'",
     choices: ["standard", "non-standard"],
     answer: 1,
@@ -390,7 +390,7 @@ const questions = [
   },
   {
     id: 41,
-    q: "Is the following sentence standard or non-standard English?", 
+    q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?", 
     q2: "'He doesn't know nothing about football'",
     choices: ["standard", "non-standard"],
     answer: 1,
@@ -398,7 +398,7 @@ const questions = [
   },
   { 
     id: 42,
-    q: "Is the following sentence standard or non-standard English?", 
+    q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?", 
     q2: "'I have done all the washing-up.'",
     choices: ["standard", "non-standard"],
     answer: 0,
@@ -407,7 +407,7 @@ const questions = [
   {
     id: 43,
     q: "What is the grammatical term for the underlined words in the sentence below?", 
-    q2: "'<em>The majestic lioness under the shady tree</em> watched her cubs play.'",
+    q2: "<em class='underline'>The majestic lioness under the shady tree</em> watched her cubs play.",
     choices: ["a fronted adverbial",
     "a subordinate clause",
     "a main clause",
@@ -417,7 +417,7 @@ const questions = [
   },
   {
     id: 44,
-    q: "Below is a sentence containing an apostrophe followed by a statement about the sentence. Choose whether the statement is true or false.", 
+    q: "Below is a sentence containing an <em class='bold'>apostrophe</em> followed by a statement about the sentence. Choose whether the statement is <em class='bold'>true</em> or <em class='bold'>false</em>.", 
     q2: "'Gina put out the cats' food.'",
   q3: " There is more than one cat.",
     choices: ["true", "false"],
@@ -426,7 +426,7 @@ const questions = [
   },
   {
     id: 45,
-    q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false.", 
+    q: "Below is a sentence containing an <em class='bold'>apostrophe</em> followed by a statement about the sentence. Choose whether the statement is <em class='bold'>true</em> or <em class='bold'>false</em>.", 
     q2: "'The girl's party is this afternoon.'",
   q3: "There is more than one girl.",
     choices: ["true", "false"],
@@ -435,7 +435,7 @@ const questions = [
   },
   {
     id: 46,
-    q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false.", 
+    q: "Below is a sentence containing an <em class='bold'>apostrophe</em> followed by a statement about the sentence. Choose whether the statement is <em class='bold'>true</em> or <em class='bold'>false</em>.",
     q2: "'The trees' leaves were green.'",
   q3: "There is only one tree.",
     choices: ["true", "false"],
@@ -444,7 +444,7 @@ const questions = [
   },
   {
     id: 47,
-    q: "Below is a sentence containing an apostrophe and a statement about the sentence. Choose whether the statement is true or false.", 
+    q: "Below is a sentence containing an <em class='bold'>apostrophe</em> followed by a statement about the sentence. Choose whether the statement is <em class='bold'>true</em> or <em class='bold'>false</em>.",
     q2: "'The boys' lunch was delicious.'",
       q3: "There is only one boy.",
     choices: ["true", "false"],
@@ -454,7 +454,7 @@ const questions = [
   {
     id: 48,
     q: "What is the grammatical term for the underlined words in the sentence below?",
-    q2: "'Nathan <em>had hoped</em> for a part in the school play.'",
+    q2: "'Nathan <em class='underline'>had hoped</em> for a part in the school play.'",
     choices: ["Simple past", "Past progressive", "Past perfect"],
     answer: 2,
     questionRef: "2022-paper1-q49a",
@@ -462,7 +462,7 @@ const questions = [
   {
     id: 49,
     q: "What is the grammatical term for the underlined words in the sentence below?", 
-    q2: "The children <em>were rehearsing</em> their lines.",
+    q2: "The children <em class='underline'>were rehearsing</em> their lines.",
     choices: ["Simple past", "Past progressive", "Past perfect"],
     answer: 1,
     questionRef: "2022-paper1-q49b",
@@ -470,7 +470,7 @@ const questions = [
   {
     id: 50,
     q: "What is the grammatical term for the underlined words in the sentence below?", 
-    q2: "Lots of parents <em>came</em> to watch.",
+    q2: "Lots of parents <em class='underline'>came</em> to watch.",
     choices: ["Simple past", "Past progressive", "Past perfect"],
     answer: 0,
     questionRef: "2022-paper1-q49c",
@@ -598,25 +598,29 @@ const questions = [
     answer: 1,
     questionRef: "2019-paper1-q42",
   },  
-  //{
-  //   id: 69,
-  //   q: "exampleToCopy",
-  //   choices: ["", "", ""],
-  //   answer: [],
-  //   questionRef: "2019-paper1-q",
-  // },  {
-  //   id: 70,
-  //   q: "exampleToCopy",
-  //   choices: ["", "", ""],
-  //   answer: [],
-  //   questionRef: "2019-paper1-q",
-  // },  {
-  //   id: 71,
-  //   q: "exampleToCopy",
-  //   choices: ["", "", ""],
-  //   answer: [],
-  //   questionRef: "2019-paper1-q",
-  // },  {
+  {
+    id: 69,
+    q: "Select one option to show whether the underlined word is a <em class='bold'>verb</em>, a <em class='bold'>noun</em> or an <em class='bold'>adjective</em>.",
+    q2: "There are many <em class='underline'>magnetic</em> materials",
+    choices: ["Verb", "Noun", "Adjective"],
+    answer: 2,
+    questionRef: "2023-paper1-q22a",
+  },  {
+    id: 70,
+    q: "Select one option to show whether the underlined word is a <em class='bold'>verb</em>, a <em class='bold'>noun</em> or an <em class='bold'>adjective</em>.",
+    q2: "<em class='underline'>Magnets</em> attract some metals",
+    choices: ["Verb", "Noun", "Adjective"],
+    answer: 1,
+    questionRef: "2023-paper1-q22b",
+  },  {
+    id: 71,
+    q: "Select one option to show whether the underlined word is a <em class='bold'>verb</em>, a <em class='bold'>noun</em> or an <em class='bold'>adjective</em>.",
+    q2: "We can <em class='underline'>magnetise</em> the nail",
+    choices: ["Verb", "Noun", "Adjective"],
+    answer: 0,
+    questionRef: "2023-paper1-q22c",
+  },  
+  // {
   //   id: 72,
   //   q: "exampleToCopy",
   //   choices: ["", "", ""],
@@ -662,7 +666,7 @@ const questions = [
 // Commented out on 3/1/2024 as this question has been answered correctly several times in a row.
   // {
   //   id: 10,
-  //   q: "Select the sentence that shows Lara is most likely to go swimming on Saturday.",
+  //   q: "Select the sentence that shows Lara is <em class='bold'>most likely</em> to go swimming on Saturday.",
   //   choices: [
   //     "Lara will go swimming on Saturday.",
   //     "Lara should go swimming on Saturday.",
