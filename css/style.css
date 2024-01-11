@@ -55,14 +55,6 @@ body {
   display: none;
 }
 
-button.choice {
-  display: block;
-  width: 100%;
-  text-align: left;
-  border: 1px solid #ccc;
-  color:#000;
-}
-
 button:disabled {
   color: inherit;
 }
@@ -119,7 +111,7 @@ button:disabled {
 }
 
 .question-container {
-  margin: 0.5rem 0 1.5rem;
+  margin: 0.7rem 0;
 }
 
 .quiz-box .question-text,
@@ -156,17 +148,22 @@ button:disabled {
 }
 
 .quiz-box .choices-container .choice {
+  animation: fadeIn 0.3s forwards;
   background-color: #ccc;
-  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  color:#000;
+  cursor: pointer;
+  display: block;
   font-size: 1.15rem;
   line-height: 1.3;
-  border-radius: 0.5rem;
+  padding: 1.2rem 0.8rem;
   margin-bottom: 0.7rem;
-  cursor: pointer;
   opacity: 0;
-  animation: fadeIn 0.3s forwards;
-  position: relative;
   overflow: hidden;
+  position: relative;  
+  text-align: left;
+  width: 100%;
 }
 
 .quiz-box .choices-container .choice.already-answered {
@@ -339,6 +336,10 @@ table td.incorrect {
   display: none;
 }
 
+.question-text-2.hide{
+  display: none;
+}
+
 .btn:focus,
 .btn:hover {
   border: 1px solid #00004d;
@@ -364,7 +365,6 @@ table td.incorrect {
   tr:not(:first-child)::before {
     content: "\A"; 
     white-space: pre;
-
   }
   
   td::before{

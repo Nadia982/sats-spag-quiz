@@ -66,7 +66,11 @@ function getNewQuestion() {
     q2.innerHTML = currentQuestion.q2;
     q2.setAttribute("class", "question-text-2");
     questionText.appendChild(q2);
+  } else {
+    const q2Div = document.getElementById("question-text-2-div");
+    q2Div.classList.add("hide");
   }
+
   if (currentQuestion.hasOwnProperty("q3")) {
     const q3 = document.createElement("p");
     q3.innerHTML = currentQuestion.q3;
