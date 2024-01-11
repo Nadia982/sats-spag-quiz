@@ -92,12 +92,11 @@ button:disabled {
 }
 
 .next-btn {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   margin-bottom: 0.7rem;
 }
 
 .next-btn.hide {
-  /* display: none; */
   visibility: hidden;
 }
 
@@ -352,6 +351,14 @@ table td.incorrect {
   gap: 2rem;
   justify-content: center;
   margin: 0.5rem auto;
+}
+
+sub {
+  position: relative;
+  bottom: -12px;
+  font-weight: bold;
+  line-height: 3rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
