@@ -748,7 +748,8 @@ const questions = [
   },
   {
     id: 89,
-    q: "Which word class is the underlined word in the sentence below? 21 My  brother  thinks  that  football  is  an  amazing  game.",
+    q: "Which word class is the underlined word in the sentence below?",
+    q2: "My brother thinks that football is <em class='underline'>an</an> amazing game.",
     choices: ["adverb", "adjective", "determiner", "conjunction"],
     answer: 2,
     questionRef: "paper1-2018-q21",
