@@ -916,7 +916,7 @@ const questions = [
   {
     id: 110,
     q: "What is the word class of the underlined word in the sentence below?", 
-    q2: "The alarm rang and Jamal immediately jumped out of bed.",
+    q2: "The alarm rang and Jamal <em class='underline'>immediately</em> jumped out of bed.",
     choices: ["conjunction", "adverb", "verb", "determiner"],
     answer: 1,
     questionRef: "paper1-2017-q9",
