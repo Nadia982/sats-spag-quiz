@@ -87,12 +87,9 @@ button:disabled {
   display: inline-block;
 }
 
-.next-btn-container {
-  display: inline-block;
-}
-
 .next-btn {
   padding: 1rem 1.5rem;
+  margin-top: 0;
   margin-bottom: 0.7rem;
 }
 
@@ -223,7 +220,7 @@ button:disabled {
 
 .bottom-section {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .quiz-box .answers-indicator {
