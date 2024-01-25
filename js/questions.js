@@ -110,7 +110,7 @@ const questions = [
       "We done a great job in picking the juiciest fruit for our pie.",
       "We did a great job in picking the juiciest fruit for our pie.",
     ],
-    answer: 14,
+    answer: 1,
     questionRef: "paper1-2023-5b",
   },
 
@@ -289,25 +289,25 @@ const questions = [
     answer: 1,
     questionRef: "paper1-2023-19",
   },
-  // {
-  //   id: 32,
-  //   q: "",
-  //   choices: [
-      
-  //   ],
-  //   answer: [],
-  //   questionRef: "paper1-2023-20a",
-  // },
-  // {
-  //   id: 33,
-  //   q: "",
-  //   choices: [
-      
-  //   ],
-  //   answer: [],
-  //   questionRef: "paper1-2023-20a",
-  // },
-
+  {
+    id: 32,
+    q: "Which <em class='bold'>pronoun</em> could be used to replace the underlined words in the sentence below? ",
+    q2: "Maggie and Helena wanted to visit the museum, so <em class='underline'>Maggie and Helena</em> tried to go there after school",
+    choices: ["they", "she", "we"
+    ],
+    answer: 0,
+    questionRef: "paper1-2023-20a",
+  },
+  {
+    id: 33,
+    q: "Which <em class='bold'>pronoun</em> could be used to replace the underlined words in the sentence below? ",
+    q2: "Maggie and Helena wanted to visit the museum, but <em class='bold'>the museum</em> was closed",
+    choices: ["it", "she", "they"
+    ],
+    answer: 0,
+    questionRef: "paper1-2023-20b",
+  },
+  
   {
     id: 34,
     q: "Which sentence uses <em class='bold'>speech marks</em> correctly?",
@@ -423,6 +423,25 @@ const questions = [
   },
   {
     id: 48,
+    q: "Which sentence uses <em class='bold'>dashes</em> correctly?",
+    choices: ["I am excited &mdash; and I mean really excited &mdash; to be going on holiday next week!",
+    "I am excited &mdash; and I mean really excited to be going on holiday next week!", 
+    "I am excited &mdash; and I mean really excited to be going on holiday &mdash; next week!"],
+    answer: 0,
+    questionRef: "paper1-2023-26",
+  },
+  {
+    id: 49,
+    q: "What is the correct way to re-write the question below as a <em class='bold'>statement</em>?",
+    q2: "Use only the words given. Remember to punctuate your answer correctly.",
+    q3: "Is art Tariq's favourite subject?",
+    choices: ["Art is Tariq's favourite subject.","Art is Tariq's favourite subject?","Art is definitely Tariq's favourite subject"],
+    answer: 0,
+    questionRef: "paper1-2023-27",
+  },
+
+  {
+    id: 50,
     q: "Which sentence is punctuated correctly?",
     choices: [
       "Erin wanted the most up-to date computer that was available.",
@@ -433,9 +452,31 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2023-28",
   },
+  {
+    id: 51,
+    q: "In which sentence has a <em class='bold'>comma</em> been correctly inserted after the <em class='bold'>fronted adverbial</em>?",
+    choices: ["Luckily for us, the ball rolled slowly past the goal.","Luckily, for us the ball rolled slowly past the goal.", "Luckily for us the ball rolled, slowly past the goal."],
+    answer: 0,
+    questionRef: "paper1-2023-29a",
+  },
+  {
+    id: 52,
+    q: "In which sentence has a <em class='bold'>comma</em> been correctly inserted after the <em class='bold'>fronted adverbial</em>?",
+    choices: ["After three hours of hard work, the builders managed to dig out the tree.","After three hours, of hard work the builders managed to dig out the tree.", "After three hours of hard work the builders managed, to dig out the tree."],
+    answer: 0,
+    questionRef: "paper1-2023-29b",
+  },
+  {
+    id: 53,
+    q: "Which part of the sentence below is a <em class='bold'>relative clause</em>?",
+    q2: "The house where I was born has been demolished",
+    choices: ["where I was born","The house", "has been demolished"],
+    answer: 0,
+    questionRef: "paper1-2023-30",
+  },
 
   {
-    id: 49,
+    id: 54,
     q: "True or false: the exclamation mark in the sentence below could tell us <em class='underline'>that the person feels strongly about going swimming</em>",
     q2: "We are going swimming tomorrow!",
     choices: ["true","false"],
@@ -443,7 +484,7 @@ const questions = [
     questionRef: "paper1-2023-31a",
   },
   {
-    id: 50,
+    id: 55,
     q: "True or false: the exclamation mark in the sentence below could tell us <em class='underline'>that the person has not finished speaking</em>",
     q2: "We are going swimming tomorrow!",
     choices: ["true","false"],
@@ -451,7 +492,7 @@ const questions = [
     questionRef: "paper1-2023-31b",
   },
   {
-    id: 51,
+    id: 56,
     q: "True or false: the exclamation mark in the sentence below could tell us <em class='underline'>that the person is speaking loudly</em>",
     q2: "We are going swimming tomorrow!",
     choices: ["true","false"],
@@ -459,7 +500,7 @@ const questions = [
     questionRef: "paper1-2023-31c",
   },
   {
-    id: 52,
+    id: 57,
     q: "True or false: the exclamation mark in the sentence below could tell us <em class='underline'>that the person is not sure if they are going swimming</em>",
     q2: "We are going swimming tomorrow!",
     choices: ["true","false"],
@@ -467,7 +508,15 @@ const questions = [
     questionRef: "paper1-2023-31d",
   },
   {
-    id: 53,
+    id: 58,
+    q: "What is the <em class='bold'>subject</em> of the sentence below?",
+    q2: "Josh wrote a letter to his Canadian friend.",
+    choices: ["Josh","wrote", "a letter", "his Canadian friend"],
+    answer: 0,
+    questionRef: "paper1-2023-32",
+  },
+  {
+    id: 59,
     q: "What are the underlined words in the sentence below?", 
     q2: "<em class='underline'>The girl with curly red hair</em> is in my class.",
     choices: [
@@ -479,8 +528,18 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2023-33",
   },
+  // id 60 = 34a
+  // id 61 = 34b
+  // id 62 = 35a
+  // id 63 = 35b
+  // id 64 = 35c
+  // id 65 = 35d
+  // id 66 = 35e
+  // id 67 = 36 Which word(s) from the sentence below are a possessive pronoun? 
+  // id 68 = 37 
+
   {
-    id: 54,
+    id: 69,
     q: "Which sentence uses a <em class='bold'>semi-colon</em> correctly?",
     choices: [
       "In the bag we found; five carrots, two cabbages and a large onion.",
@@ -491,8 +550,28 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2023-38",
   },
+  //id 70 = 39a. Which of the following subordinating conjunction would be appropriate to use at the start of this sentence? Although/because
+  //id 71 = 39b. Even though/despite
+  //id 72 = 39c. While/since
+  //id 73 = 40. Which word(s) from the sentence below is an adverb? 
+  //id 74 = 41a. proudly/prowdly
+  //id 75 = 41b. pride/proudness
+  //id 76 = 42a
+  //id 77 = 42b 
+  //id 78 = 42c
+  //id 79 = 43. How many separate sentences should the following text be split up into? 
+  //id 80 = 44
+  //id 81 = 45a
+  //id 82 = 45b
+  //id 83 = 45c
+  //id 84 = 46. How many determiners does the sentence below contain? 
+  //id 85 = 46. Which words are determiners in the sentence below? The, a. The, its, a. The, its, itself, a.
+//id 86 = 47. "The children will be singing a song.","The children will sing a song", "the children will sing a song"
+//id 87 = 48. 
+//id 88 = 49
+
   {
-    id: 55,
+    id: 89,
     q: "Is <em class='underline'>once</em> an <em class='bold'>adverb</em> or a <em class='bold'>conjunction</em> in the sentence below?", 
     q2: "'I've only been to France <em class='underline'>once</em> with my family.'",
     choices: ["adverb", "conjunction"],
@@ -500,7 +579,7 @@ const questions = [
     questionRef: "paper1-2023-50a",
   },
   {
-    id: 56,
+    id: 90,
     q: "Is <em class='underline'>once</em> an <em class='bold'>adverb</em> or a <em class='bold'>conjunction</em> in the sentence below?",  
     q2: "'<em class='underline'>Once</em> I arrived in Paris, I tried to speak French.'",
     choices: ["adverb", "conjunction"],
@@ -508,7 +587,7 @@ const questions = [
     questionRef: "paper1-2023-50b",
   },
   {
-    id: 57,
+    id: 91,
     q: "Is <em class='underline'>once</em> an <em class='bold'>adverb</em> or a <em class='bold'>conjunction</em> in the sentence below?", 
     q2: "'My accent really improved <em class='underline'>once</em> we had been there a few days.'",
     choices: ["adverb", "conjunction"],
