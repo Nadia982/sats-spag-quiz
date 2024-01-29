@@ -590,15 +590,15 @@ const questions = [
      answer: 2,
      questionRef: "paper1-2023-36",
   },
-  {
-    id: 68,
-    q: "",
-    choices: [
+  // {
+  //   id: 68,
+  //   q: "",
+  //   choices: [
     
-    ],
-    answer: [],
-    questionRef: "paper1-2023-37",
-  },
+  //   ],
+  //   answer: [],
+  //   questionRef: "paper1-2023-37",
+  // },
   {
     id: 69,
     q: "Which sentence uses a <em class='bold'>semi-colon</em> correctly?",
@@ -615,6 +615,16 @@ const questions = [
   //id 71 = 39b. Even though/despite
   //id 72 = 39c. While/since
   //id 73 = 40. Which word(s) from the sentence below is an adverb? 
+  //
+   {
+    id: 50,
+    q: "Which word(s) from the sentence below is an <em class='bold'>adverb</em>?",
+    q2: "The boy had seven brothers, each one quite different from the others",
+    choices: ["seven", "quite", "different"],
+    answer: 1,
+    questionRef: "paper1-2023-q40",
+  },
+
   //id 74 = 41a. proudly/prowdly
   //id 75 = 41b. pride/proudness
   //id 76 = 42a
@@ -625,8 +635,18 @@ const questions = [
   //id 81 = 45a
   //id 82 = 45b
   //id 83 = 45c
-  //id 84 = 46. How many determiners does the sentence below contain? 
-  //id 85 = 46. Which words are determiners in the sentence below? The, a. The, its, a. The, its, itself, a.
+
+    {
+    id: 84,
+    q: "How many <em class='bold'>determiners</em> does the sentence below contain?",
+    q2: "The black kitten licked its paws and curled itself up into a tight ball.",
+    choices: ["two: 'the' and 'a'",
+    "three: 'the', 'its' and 'a'", 
+    "four: 'the', 'its', 'itself' and 'a'"],
+    answer: 1,
+    questionRef: "paper1-2023-q46",
+  },
+
 //id 86 = 47. "The children will be singing a song.","The children will sing a song", "the children will sing a song"
 //id 87 = 48. 
 //id 88 = 49
