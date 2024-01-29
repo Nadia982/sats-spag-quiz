@@ -435,7 +435,7 @@ const questions = [
     q: "What is the correct way to re-write the question below as a <em class='bold'>statement</em>?",
     q2: "Use only the words given. Remember to punctuate your answer correctly.",
     q3: "Is art Tariq's favourite subject?",
-    choices: ["Art is Tariq's favourite subject.","Art is Tariq's favourite subject?","Art is definitely Tariq's favourite subject"],
+    choices: ["Art is Tariq's favourite subject.","Art is Tariq's favourite subject?","Art is Tariq's favourite subject"],
     answer: 0,
     questionRef: "paper1-2023-27",
   },
