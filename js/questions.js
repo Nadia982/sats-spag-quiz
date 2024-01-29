@@ -528,16 +528,77 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2023-33",
   },
-  // id 60 = 34a
-  // id 61 = 34b
-  // id 62 = 35a
-  // id 63 = 35b
-  // id 64 = 35c
-  // id 65 = 35d
-  // id 66 = 35e
-  // id 67 = 36 Which word(s) from the sentence below are a possessive pronoun? 
-  // id 68 = 37 
-
+  {
+    id: 60,
+    q: "What is the <em class='bold'>contracted form</em> of 'will not'",
+    choices: ["will", "wont", "won't"],
+    answer: 2,
+    questionRef: "paper1-2023-34a",
+  },
+  {
+    id: 61,
+    q: "What is the <em class='bold'>contracted form</em> of 'she would'?",
+    choices: ["she", "she'd", "she'll"],
+    answer: 1,
+    questionRef: "paper1-2023-34b",
+  },
+  {
+    id: 62,
+    q: "Does this sentence contain a <em class='bold'>preposition</em>?",
+    q2: "Kelly wrote a poem on Tuesday night.",
+    choices: ["yes", "no"],
+    answer: 0,
+    questionRef: "paper1-2023-35a",
+  },
+  {
+    id: 63,
+    q: "Does this sentence contain a <em class='bold'>preposition</em>?",
+    q2: "She worked very hard all evening",
+    choices: ["yes", "no"],
+    answer: 1,
+    questionRef: "paper1-2023-35b",
+  },
+  {
+    id: 64,
+    q: "Does this sentence contain a <em class='bold'>preposition</em>?",
+    q2: "Her mum read the poem before school.",
+    choices: ["yes", "no"],
+    answer: 0,
+    questionRef: "paper1-2023-35c",
+  },
+  {
+    id: 65,
+    q: "Does this sentence contain a <em class='bold'>preposition</em>?",
+    q2: "Kelly's mum said it was excellent.",
+    choices: ["yes", "no"],
+    answer: 1,
+    questionRef: "paper1-2023-35d",
+  },
+  {
+    id: 66,
+    q: "Does this sentence contain a <em class='bold'>preposition</em>?",
+    q2: "Kelly really enjoyed writing her poem.",
+    choices: ["yes", "no"],
+    answer: 1,
+    questionRef: "paper1-2023-33e",
+  },
+  {
+    id: 67,
+    q: "Which word from the sentence below is a <em class='bold'>possessive pronoun</em>? ",
+    q2: "She asked to borrow Zak's pencil because hers were all blunt.",
+     choices: ["she", "Zak's", "hers"],
+     answer: 2,
+     questionRef: "paper1-2023-36",
+  },
+  {
+    id: 68,
+    q: "",
+    choices: [
+    
+    ],
+    answer: [],
+    questionRef: "paper1-2023-37",
+  },
   {
     id: 69,
     q: "Which sentence uses a <em class='bold'>semi-colon</em> correctly?",
