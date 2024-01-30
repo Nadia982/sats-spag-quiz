@@ -590,15 +590,16 @@ const questions = [
      answer: 2,
      questionRef: "paper1-2023-36",
   },
-  // {
-  //   id: 68,
-  //   q: "",
-  //   choices: [
-    
-  //   ],
-  //   answer: [],
-  //   questionRef: "paper1-2023-37",
-  // },
+  {
+    id: 68,
+    q: "Explain how the position of the comma changes the meaning of the sentences below",
+    q2: "As Fred ate the sweet orange, balloons were given to the children",
+    q3: "As Fred ate the sweet, orange balloons were given to the children",
+    choices: ["Explain the difference to your grown-up"
+    ],
+    answer: [],
+    questionRef: "paper1-2023-37",
+  },
   {
     id: 69,
     q: "Which sentence uses a <em class='bold'>semi-colon</em> correctly?",
@@ -611,31 +612,126 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2023-38",
   },
-  //id 70 = 39a. Which of the following subordinating conjunction would be appropriate to use at the start of this sentence? Although/because
-  //id 71 = 39b. Even though/despite
-  //id 72 = 39c. While/since
-  //id 73 = 40. Which word(s) from the sentence below is an adverb? 
-  //
+  {
+    id: 70,
+    q: "Which of the following <em class='bold'>subordinating conjunctions</em> would be appropriate to use at the start of the sentence below?",
+    q2: "__________ football is his favourite sport, James also enjoys watching tennis on TV",
+    choices: [
+      "Although", "Because"
+    ],
+    answer: 0,
+    questionRef: "paper1-2023-39a",
+  },
+  {
+    id: 71,
+    q: "Which of the following <em class='bold'>subordinating conjunctions</em> would be appropriate to use at the start of the sentence below?",
+    q2: "__________ football is his favourite sport, James also enjoys watching tennis on TV",
+    choices: [
+      "Even though", "Despite"
+    ],
+    answer: 0,
+    questionRef: "paper1-2023-39b",
+  },
+  {
+    id: 72,
+    q: "Which of the following <em class='bold'>subordinating conjunctions</em> would be appropriate to use at the start of the sentence below?",
+    q2: "__________ football is his favourite sport, James also enjoys watching tennis on TV",
+    choices: [
+      "While", "Since"
+    ],
+    answer: 0,
+    questionRef: "paper1-2023-39c",
+  },
+
    {
-    id: 50,
+    id: 73,
     q: "Which word(s) from the sentence below is an <em class='bold'>adverb</em>?",
     q2: "The boy had seven brothers, each one quite different from the others",
     choices: ["seven", "quite", "different"],
     answer: 1,
     questionRef: "paper1-2023-q40",
   },
+  {
+    id: 74,
+    q: "Which word (from the same <em class='bold'>word family</em> as <em class='underline'>'proud'</em>) correctly completes the sentence below?",
+    q2: "We __________ represented our school in the competition",
+    choices: ["proudly", "pride"],
+    answer: 0,
+    questionRef: "paper1-2023-q41a",
+  },
+  {
+    id: 75,
+    q: "Which word (from the same <em class='bold'>word family</em> as <em class='underline'>'proud'</em>) correctly completes the sentence below?",
+    q2: "We took __________ in representing our school in the competition",
+    choices: ["proudly", "pride"],
+    answer: 1,
+    questionRef: "paper1-2023-q41b",
+  },
+  {
+    id: 76,
+    q: "Which word from the sentence below is a <em class='bold'>relative pronoun</em>?",
+    q2: "A large collection of gold and silver, which is known as the Staffordshire Hoard, was discovered in 2009.",
+    choices: ["which", "A", "collection"],
+    answer: 0,
+    questionRef: "paper1-2023-q42a",
+  },
+  {
+    id: 77,
+    q: "Which word from the sentence below is a <em class='bold'>relative pronoun</em>?",
+    q2: "Mr Herbert, who made the discovery using his metal detector, received a reward for finding it.",
+    choices: ["who", "Mr Herbert", "his"],
+    answer: 0,
+    questionRef: "paper1-2023-q42b",
+  },
+  {
+    id: 78,
+    q: "Which word from the sentence below is a <em class='bold'>relative pronoun</em>?",
+    q2: "Some  of  the  artefacts  that  he  found  are  on  display  in  museums.",
+    choices: ["that", "some", "he"],
+    answer: 0,
+    questionRef: "paper1-2023-q42c",
+  },
 
-  //id 74 = 41a. proudly/prowdly
-  //id 75 = 41b. pride/proudness
-  //id 76 = 42a
-  //id 77 = 42b 
-  //id 78 = 42c
-  //id 79 = 43. How many separate sentences should the following text be split up into? 
-  //id 80 = 44
-  //id 81 = 45a
-  //id 82 = 45b
-  //id 83 = 45c
-
+  {
+    id: 79,
+    q: "The following text has not been correctly punctuated with capital letters and fulls stops. How many separate sentences should the following text be split up into? Tell your grown-up where the capital letters and full stops should go.",
+    q2: "we hope that you enjoy the new school meals the menu will be put on the school website if you have any comments, please send us an email",
+    choices: ["Two", "Three", "Four"],
+    answer: 1,
+    questionRef: "paper1-2023-q43",
+  },
+  // {
+  //   id: 80,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["", ""],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q44",
+  // },
+  // {
+  //   id: 81,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["", ""],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q45a",
+  // },
+  // {
+  //   id: 82,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["", ""],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q45b",
+  // },
+  // {
+  //   id: 83,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["", ""],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q45c",
+  // },
     {
     id: 84,
     q: "How many <em class='bold'>determiners</em> does the sentence below contain?",
@@ -646,10 +742,38 @@ const questions = [
     answer: 1,
     questionRef: "paper1-2023-q46",
   },
-
-//id 86 = 47. "The children will be singing a song.","The children will sing a song", "the children will sing a song"
-//id 87 = 48. 
-//id 88 = 49
+  // {
+  //   id: 85,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["", ""],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q41a",
+  // },
+    // {
+  //   id: 86,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["The children will be singing a song.","The children will sing a song", "the children will sing a song"],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q47",
+  // },
+  // {
+  //   id: 87,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["", ""],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q48",
+  // },
+  // {
+  //   id: 88,
+  //   q: "",
+  //   q2: "",
+  //   choices: ["", ""],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-q49",
+  // },
 
   {
     id: 89,
