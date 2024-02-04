@@ -87,13 +87,13 @@ button:disabled {
   display: inline-block;
 }
 
-.next-btn {
+.submit-btn, .next-btn {
   padding: 1rem 1.5rem;
   margin-top: 0;
   margin-bottom: 0.7rem;
 }
 
-.next-btn.hide {
+.submit-btn.hide, .next-btn.hide {
   visibility: hidden;
 }
 
@@ -221,11 +221,11 @@ button:disabled {
 .bottom-section {
   display: flex;
   align-items: flex-start;
+  gap: 1rem;
 }
 
 .quiz-box .answers-indicator {
   display: inline-block;
-  margin-left: 1rem;
 }
 
 .quiz-box .answers-indicator div {

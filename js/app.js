@@ -10,6 +10,7 @@ const answersIndicatorContainer = document.querySelector(".answers-indicator");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
+const submitButton = document.querySelector(".submit-btn");
 const nextButton = document.querySelector(".next-btn");
 const questionLimit = 10;
 const questionsAskedContainer = document.querySelector(".questions-asked-container"
@@ -120,29 +121,44 @@ function getNewQuestion() {
 
     choice.className = "choice";
     choicesContainer.appendChild(choice);
+    
     choice.setAttribute("onclick", "getResult(this)");
 
-    // choice.addEventListener("keydown", pressEnterToGetResult);
+    // choice.setAttribute("onclick", "selectOption(this)");
 
-    // function pressEnterToGetResult(e) {
-    //   if (e.key == "Enter") {
-    //     option.removeEventListener("keydown", pressEnterToGetResult);
-    //     getResult(this);
-    //     unclickableOptions();
-    //   }
-    // }
-  }
+  //   choice.addEventListener("click", (e)=>{
+  //     chosenOption = e.target.id;
+  //     console.log(chosenOption);
+  //     return chosenOption;
+  //   });
+  //   submitButton.addEventListener("click", () => {
+  //     getResult(chosenOption);
+  // });
+}
   choicesContainer.children[0].setAttribute("autofocus", "autofocus");
   nextButton.tabIndex = 1;
   questionCounter++;
 }
+// function selectOption(element){
+//   const selectedId = parseInt(element.id);
+//   console.log(selectedId);
+//   return selectedId;
+// } 
+
+// submitButton.addEventListener("click", () => {
+//   getResult(selectedId);
+// });
+// function getId(choice){
+//   choice.setAttribute("selected", "selected");
+//   console.log(choice.selected);
+// }
 
 function getResult(element) {
   unclickableOptions();
   const id = parseInt(element.id);
   const answerText = element.innerHTML;
   yourAnswersList.push(answerText);
-  console.log(yourAnswersList);
+  // console.log(yourAnswersList);
   //get the answer by comparing the id of the clicked choice
   if (id === currentQuestion.answer) {
     // add green colour if user selects correct choice
@@ -249,7 +265,7 @@ function displayQuestions() {
         questionsAskedList[i].q3;
     } else if (questionsAskedList[i].hasOwnProperty("q2")) {
       let q2QuestionContents = questionsAskedList[i].q + " " + questionsAskedList[i].q2;
-      console.log(q2QuestionContents);
+      // console.log(q2QuestionContents);
       questionAskedCell.innerHTML = q2QuestionContents; 
     } else {
       questionAskedCell.innerHTML = questionsAskedList[i].q;
