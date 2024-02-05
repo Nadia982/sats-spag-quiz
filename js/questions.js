@@ -57,7 +57,7 @@ const questions = [
     id: 7,
     q: "Which suffix can be added to the word <em class='underline'>'relation'</em> to make a new word?",
     choices: ["ish", "ise", "ship"],
-    answer: 3,
+    answer: 2,
     questionRef: "paper1-2023-3b",
   },
   {
@@ -864,7 +864,6 @@ const questions = [
     answer: 0,
     questionRef: "4-feb-2024-spellings",
   },
-
 
   // 2022 questions
 //   {
