@@ -864,6 +864,36 @@ const questions = [
     answer: 0,
     questionRef: "4-feb-2024-spellings",
   },
+  {
+    id: 94,
+    q: "Which of these two words is a four-legged farm animal?",
+    choices: ["horse", "hoarse"],
+    answer: 0,
+    questionRef: "4-feb-2024-spellings",
+  },
+  {
+    id: 95,
+    q: "Which of these two words describes a voice that sounds rough and croaky (often when someone has a cough or cold)?",
+    choices: ["hoarse", "horse"],
+    answer: 0,
+    questionRef: "4-feb-2024-spellings",
+  },
+  {
+    id: 96,
+    q: "Which word is the antonym of 'lower'?",
+    choices: ["higher", "hire"],
+    answer: 0,
+    questionRef: "4-feb-2024-spellings",
+  },
+  {
+    id: 96,
+    q: "Which word describes paying to borrow something for a fixed length of time?",
+    choices: ["hire", "higher"],
+    answer: 0,
+    questionRef: "4-feb-2024-spellings",
+  },
+
+
 
   // 2022 questions
 //   {
