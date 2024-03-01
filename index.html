@@ -19,7 +19,10 @@
       </button>
     </div>
     <div class="quiz-box custom-box hide">
+      <div class="top-container">
       <div class="question-number"></div>
+      <button type="button" class="next-btn btn" onclick="next()">Next</button>
+    </div>
       <div class="question-container">
         <div class="question-text"></div>
         <div id="question-text-2-div" class="question-text-2"></div>
@@ -31,11 +34,7 @@
             Submit
           </button>
         </div> -->
-        <div class="next-btn-container">
-          <button type="button" class="next-btn btn" onclick="next()">
-            Next
-          </button>
-        </div>
+
         <div class="answers-indicator"></div>
       </div>
     </div>
@@ -53,20 +52,21 @@
           Go to home
         </button>
       </div>
-<!-- <h2>Quiz summary</h2> -->
-      
-        <table>
-          <caption>Quiz summary</caption>
-          <tr>
-            <th>No.</th>
-            <th>Question</th>
-            <th>Your Answer</th>
-            <th>Correct Answer</th>
-            <th>Result</th>
-          </tr>
-          <tbody class="questions-asked-container"></tbody>
-        </table>
-      
+      <!-- <h2>Quiz summary</h2> -->
+
+      <table>
+        <caption>
+          Quiz summary
+        </caption>
+        <tr>
+          <th>No.</th>
+          <th>Question</th>
+          <th>Your Answer</th>
+          <th>Correct Answer</th>
+          <th>Result</th>
+        </tr>
+        <tbody class="questions-asked-container"></tbody>
+      </table>
     </div>
     <p class="attribution">
       The questions on this website contain public sector information licensed
