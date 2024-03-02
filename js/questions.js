@@ -1222,6 +1222,14 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2022-q12d",
   },
+  {
+    id: 137,
+    q: "Which sentence uses a <em class='bold'>semi-colon</em> correctly?", 
+  
+    choices: ["The suitcase was heavy; the box was lighter but more awkward to carry.", "The suitcase; was heavy the box was lighter but more awkward to carry.", "The suitcase was heavy the box was lighter; but more awkward to carry."],
+    answer: 0,
+    questionRef: "paper1-2022-q13",
+  },
 
 //   {
 //     id: 32,
