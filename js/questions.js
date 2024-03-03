@@ -1479,22 +1479,62 @@ const questions = [
   {
     id: 165,
     q: "The teacher wants to write a sign to remind children to turn the lights off.",
-    q2: "Take a piece of paper and write the <em class='bold'>command</em> that the teacher might use on the sign. Remember to punctuate your answer correctly.",
-    choices: ["I have done this"],
+    q2: "Which of the sentences below is a correctly punctuated command that the teacher might use on the sign?",
+    choices: ["Please remember to turn the lights off!", "You must turn off the lights.", "Have you turned the lights off?", "please turn off the lights." ],
     answer: 0,
     questionRef: "paper1-2022-q32",
   },
+  {
+    id: 166,
+    q: "Which word in the sentence below is a <em class='bold'>relative pronoun</em>?",
+    q2: "The children who were going swimming had their lunch earlier than we did",
+    choices: ["who", "their", "we"],
+    answer: 0,
+    questionRef: "paper1-2022-q33",
+  },
+  {
+    id: 167,
+    q: "Which word in the sentence below is a <em class='bold'>subordinating conjunction</em>?",
+    q2: "Since it is sunny today, we can play rounders or cricket.",
+    choices: ["since", "or"],
+    answer: 0,
+    questionRef: "paper1-2022-q34",
+  },
+  {
+    id: 168,
+    q: "Which sentence rewrites the following sentence in the <em class='bold'>active voice</em> with correct punctuation?",
+    q2: "The dog was fed by Bill.",
+    choices: ["Bill fed the dog.", "bill fed the dog.", "Bill fed the dog"],
+    answer: 0,
+    questionRef: "paper1-2022-q35",
+  },
+  {
+    id: 169,
+    q: "Which option makes the sentence start with an <em class='bold'>adverbial</em>?", 
+    q2: "_________ we lined up for the class photo.",
+    choices: ["It was noisy and crowded, but", "The photographer arrived while", "With big smiles on our faces,", "The whole class were ready so"],
+    answer: 2,
+    questionRef: "paper1-2022-q36",
+  },
+  {
+    id: 170,
+    q: "Which option would complete the following sentence with an appropriate <em class='bold'>subordinating conjunction</em>?",
+    q2: "_________ it rained all afternoon, the picnic was a success.",
+    choices: ["Although", "Despite", "Because"],
+    answer: 0,
+    questionRef: "paper1-2022-q37",
+  },
+  {
+    id: 171,
+    q: "Which word from the following sentence is a <em class='bold'>coordinating conjunction</em>?",
+    q2: "I started drawing a car, but then I changed my mind because I had a better idea.",
+    choices: ["but", "because"],
+    answer: 0,
+    questionRef: "paper1-2022-q38",
+  },
 
 
-// The teacher wants to write a sign to remind children to turn the  lights off. 
-//   {
-//     id: 38,
-//     q: "Which option makes the sentence start with an <em class='bold'>adverbial</em>?", 
-//     q2: "_________ we lined up for the class photo.",
-//     choices: ["It was noisy and crowded, but", "The photographer arrived while", "With big smiles on our faces,", "The whole class were ready so"],
-//     answer: 2,
-//     questionRef: "paper1-2022-q36",
-//   },
+  //last question in 2022 paper is question 50
 //   {
 //     id: 39,
 //     q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?", 
