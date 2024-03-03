@@ -1225,32 +1225,104 @@ const questions = [
   {
     id: 137,
     q: "Which sentence uses a <em class='bold'>semi-colon</em> correctly?", 
-  
     choices: ["The suitcase was heavy; the box was lighter but more awkward to carry.", "The suitcase; was heavy the box was lighter but more awkward to carry.", "The suitcase was heavy the box was lighter; but more awkward to carry."],
     answer: 0,
     questionRef: "paper1-2022-q13",
   },
-
-//   {
-//     id: 32,
-//     q: "What is the <em class='bold'>word class</em> of the underlined words?",
-//     q2: "I have two brothers. Brian is <em class='underline'>older</em> and Stanley is <em class='underline'>younger</em> than me.",
-//     choices: ["adjective", "noun", "adverb", "verb"],
-//     answer: 0,
-//     questionRef: "paper1-2022-q15",
-//   },
-//   {
-//     id: 33,
-//     q: "Which sentence is the most formal? Select one.",
-//     choices: [
-//       "Getting enough sleep is important, isn't it?",
-//       "Let's set off early for school tomorrow.",
-//       "Do you fancy coming with us to the park?",
-//       "It is essential that we remember our water bottles.",
-//     ],
-//     answer: 3,
-//     questionRef: "paper1-2022-q17",
-//   },
+  {
+    id: 138,
+    q: "What is the contracted form of 'was not'?", 
+    choices: ["wasn't", "wasnt", "was'nt"],
+    answer: 0,
+    questionRef: "paper1-2022-q14a",
+  },
+  {
+    id: 139,
+    q: "What is the contracted form of 'he had'?", 
+    choices: ["he'd", "he'ed", "hee'd"],
+    answer: 0,
+    questionRef: "paper1-2022-q14b",
+  },
+  {
+    id: 140,
+    q: "What is the contracted form of 'it is'?", 
+    choices: ["it's", "its", "its'"],
+    answer: 0,
+    questionRef: "paper1-2022-q14c",
+  },
+  {
+    id: 141,
+    q: "What is the <em class='bold'>word class</em> of the underlined words?",
+    q2: "I have two brothers. Brian is <em class='underline'>older</em> and Stanley is <em class='underline'>younger</em> than me.",
+    choices: ["adjective", "noun", "adverb", "verb"],
+    answer: 0,
+    questionRef: "paper1-2022-q15",
+  },
+  {
+    id: 142,
+    q: "Which sentence uses a <em class='bold'>dash</em> correctly?",
+    choices: ["The story was exciting &#8212 it was full of action and adventure.", "The story was exciting it was full of action &#8212 and adventure."],
+    answer: 0,
+    questionRef: "paper1-2022-q16",
+  },
+  {
+    id: 143,
+    q: "Which sentence is the most formal? Select one.",
+    choices: [
+      "Getting enough sleep is important, isn't it?",
+      "Let's set off early for school tomorrow.",
+      "Do you fancy coming with us to the park?",
+      "It is essential that we remember our water bottles.",
+    ],
+    answer: 3,
+    questionRef: "paper1-2022-q17",
+  },
+  {
+    id: 144,
+    q: "Which two words from the sentence below are <em class='bold'>synonyms</em> of each other?",
+    q2: "The school will supply all meals during the trip. If parents wish to provide children with additional drinks, they may do so.",
+    choices: [
+      "'supply' and 'provide'",
+      "'wish' and 'may'",
+      "'parents' and 'children'"
+    ],
+    answer: 0,
+    questionRef: "paper1-2022-q18",
+  },
+  {
+    id: 145,
+    q: "Are the underlined words in the sentence below a main or subordinate clause?",
+    q2: "<em class='underline'>After they had been for a swim,</em> the boys had a drink because they were very thirsty.",
+    choices: [
+      "main",
+      "subordinate",
+    ],
+    answer: 1,
+    questionRef: "paper1-2022-q19a",
+  },
+  {
+    id: 146,
+    q: "Are the underlined words in the sentence below a main or subordinate clause?",
+    q2: "After they had been for a swim, <em class='underline'>the boys had a drink</em> because they were very thirsty.",
+    choices: [
+      "main",
+      "subordinate",
+    ],
+    answer: 0,
+    questionRef: "paper1-2022-q19b",
+  },
+  {
+    id: 147,
+    q: "Are the underlined words in the sentence below a main or subordinate clause?",
+    q2: "After they had been for a swim, the boys had a drink <em class='underline'>because they were very thirsty.</em>",
+    choices: [
+      "main",
+      "subordinate",
+    ],
+    answer: 1,
+    questionRef: "paper1-2022-q19c",
+  },
+  
 //   {
 //     id: 34,
 //     q: "Which option is punctuated correctly? Select one.",
