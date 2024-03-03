@@ -2329,6 +2329,53 @@ const questions = [
   //   img: "img/square.jpg"
   // questionRef:
   //   }
+  {
+    id: 3001,
+    q: "What does the root word 'ab' mean in the following words?",
+    q2: "absent, abduct, abnormal",
+    choices: ["away", "not", "for"],
+    answer: 0, 
+    questionRef: "word-meanings",
+  },
+  {
+    id: 3002,
+    q: "What does the root word 'acu' mean in the following words?",
+    q2: "acute, acupuncture",
+    choices: ["sharp", "very"],
+    answer: 0, 
+    questionRef: "word-meanings",
+  },
+  {
+    id: 3003,
+    q: "What does the root word 'aer' mean in the following words?",
+    q2: "aerial, aeroplane",
+    choices: ["air/atmosphere", "high"],
+    answer: 0, 
+    questionRef: "word-meanings",
+  },
+  {
+    id: 3004,
+    q: "What does the root word 'agri' mean in the word 'agriculture'?",
+    choices: ["farming", "anger"],
+    answer: 0, 
+    questionRef: "word-meanings",
+  },
+  {
+    id: 3005,
+    q: "What does the root word 'agri' mean in the word 'agriculture'?",
+    choices: ["farming", "anger"],
+    answer: 0, 
+    questionRef: "word-meanings",
+  },
+  {
+    id: 3006,
+    q: "What does the root word 'amb' mean in the following words?",
+    q2: "ambiguous, ambidextrous",
+    choices: ["both", "a lot"],
+    answer: 0, 
+    questionRef: "word-meanings",
+  },
+
 ];
 
 // Commented out on 3/1/2024 as this question has been answered correctly several times in a row.
