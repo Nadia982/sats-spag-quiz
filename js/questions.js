@@ -597,7 +597,7 @@ const questions = [
     q3: "As Fred ate the sweet, orange balloons were given to the children",
     choices: ["Explain the difference to your grown-up"
     ],
-    answer: [],
+    answer: 0,
     questionRef: "paper1-2023-37",
   },
   {
@@ -973,7 +973,7 @@ const questions = [
   {
     id: 108,
     q: "Which word is the antonym of 'depart'?",
-    choices: [ "arrive", "above", "arrive"],
+    choices: [ "arrive", "above", "tame"],
     answer: 0, 
     questionRef: "9-feb-2024-spellings",
   },
