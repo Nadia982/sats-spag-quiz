@@ -2695,6 +2695,48 @@ const questions = [
     answer: 0,
     questionRef: "homophones - weak/week",
   },
+  {
+    id: 315,
+    q: "Which word correctly completes the sentence below?",
+    q2: "______ huddled around the campfire because the weather is cold.",
+    choices: ["there", "their", "they're"],
+    answer: 2,
+    questionRef: "homophones - there/their/they're",
+  },
+  {
+    id: 316,
+    q: "Which word correctly completes the sentence below?",
+    q2: "They have left ______ cardigans over there!",
+    choices: ["there", "their", "they're"],
+    answer: 1,
+    questionRef: "homophones - there/their/they're",
+  },
+  {
+    id: 317,
+    q: "Which word correctly completes the sentence below?",
+    q2: "______ are some hazards on our road.",
+    choices: ["There", "Their", "They're"],
+    answer: 0,
+    questionRef: "homophones - there/their/they're",
+  },
+  {
+    id: 318,
+    q: "Which word correctly completes the sentence below?",
+    q2: "The rays of the ____ bathed her in light.",
+    choices: ["sun", "son"],
+    answer: 0,
+    questionRef: "homophones - sun/son",
+  },
+  {
+    id: 319,
+    q: "Which word correctly completes the sentence below?",
+    q2: "The mother cat picked up her ____ by the scruff of his neck.",
+    choices: ["sun", "son"],
+    answer: 1,
+    questionRef: "homophones - sun/son",
+  },
+
+  
 
 //   {
 
