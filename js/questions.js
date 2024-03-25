@@ -277,18 +277,18 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2023-18",
   },
-  {
-    id: 31,
-    q: "Which sentence uses <em class='bold'>tense</em> correctly?",
-    choices: [
-      "She is getting the ball and then she scored the winning goal.",
-      "My friends thought the film was good, but I don't like thrillers.",
-      "When the clock strikes midnight, everyone was in bed.",
-      "Tonight he is playing rounders and she joined in.",
-    ],
-    answer: 1,
-    questionRef: "paper1-2023-19",
-  },
+  // {
+  //   id: 31,
+  //   q: "Which sentence uses <em class='bold'>tense</em> correctly?",
+  //   choices: [
+  //     "She is getting the ball and then she scored the winning goal.",
+  //     "My friends thought the film was good, but I don't like thrillers.",
+  //     "When the clock strikes midnight, everyone was in bed.",
+  //     "Tonight he is playing rounders and she joined in.",
+  //   ],
+  //   answer: 1,
+  //   questionRef: "paper1-2023-19",
+  // },
   {
     id: 32,
     q: "Which <em class='bold'>pronoun</em> could be used to replace the underlined words in the sentence below? ",
@@ -3137,6 +3137,16 @@ const questions = [
     answer: 0,
     questionRef: "paper1-2018-q32",
   },
+  {
+    id: 371,
+    q: "Which word from the sentence below is a <em class='bold'>possessive pronoun</em>? ",
+    q2: "Feeling sheepish, she admitted that the mistake was all hers.",
+     choices: ["hers", "she", "the", "all"],
+     answer: 0,
+     questionRef: "possessive-pronouns",
+  },
+
+//  Feeling sheepish, she admitted that the mistake was all hers.
 //   {
 //     id: 98,
 //     q: "Is this sentence written in the <em class = 'bold'>active</em> or the <em class = 'bold'>passive</em>.",
