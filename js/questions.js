@@ -1611,14 +1611,14 @@ const questions = [
     answer: 1,
     questionRef: "paper1-2022-q42c",
   },
-  { 
-    id: 181,
-    q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?", 
-    q2: "'I have done all the washing-up.'",
-    choices: ["standard", "non-standard"],
-    answer: 0,
-    questionRef: "paper1-2022-q42d",
-  },
+  // { 
+  //   id: 181,
+  //   q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?", 
+  //   q2: "'I have done all the washing-up.'",
+  //   choices: ["standard", "non-standard"],
+  //   answer: 0,
+  //   questionRef: "paper1-2022-q42d",
+  // },
   { 
     id: 182,
     q: "Which <em class='bold'>prefix</em> should be added to the following word to form its <em class='bold'>antonym</em>?",
@@ -2197,8 +2197,8 @@ const questions = [
     id: 252,
     q: "Which word in the following sentence shows that the sentence is a <em class='bold'>command</em>?",
     q2: "To see pictures of the rugby match, click here",
-    choices: ["To", "see", "pictures", "of", "the", "rugby", "match", "click", "here"],
-    answer: 2,
+    choices: ["click", "To", "see", "pictures", "match", "here"],
+    answer: 0,
     questionRef: "2019-paper1-q26",
   }, 
   // {
@@ -3065,15 +3065,14 @@ const questions = [
     answer: 0,
     questionRef: "paper1-2018-q28",
   },
-
-  {
-    id: 362,
-    q: "Select the most <em class='bold'>formal</em> option to complete the sentence.",
-    q2: "We would like to invite you to a __________",
-    choices: ["catch-up", "celebration", "get-together"],
-    answer: 1,
-    questionRef: "paper1-2018-q29a",
-  },
+  // {
+  //   id: 362,
+  //   q: "Select the most <em class='bold'>formal</em> option to complete the sentence.",
+  //   q2: "We would like to invite you to a __________",
+  //   choices: ["catch-up", "celebration", "get-together"],
+  //   answer: 1,
+  //   questionRef: "paper1-2018-q29a",
+  // },
   // {
   //   id: 363,
   //   q: "Select the most <em class='bold'>formal</em> option to complete the sentence.",
