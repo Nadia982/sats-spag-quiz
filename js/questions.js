@@ -2068,7 +2068,7 @@ const questions = [
     q: "Which sentence uses a <em class='bold'>pair of brackets</em> correctly?",
     choices: ["Using public transport (such as buses and trains) can reduce pollution.", 
     "Using public transport (such as buses and trains) can reduce pollution.", 
-    "Using public transport such as buses (and trains) can reduce pollution."
+    "Using (public transport) such as buses and trains can reduce pollution."
   ],
     answer: 0,
     questionRef: "2019-paper1-q11",
@@ -3216,7 +3216,7 @@ const questions = [
   },
   {
     id: 381,
-    q: "What is the <em class='bold'>simple past tense</em>of the underlined verb in the sentence below?",
+    q: "What is the <em class='bold'>simple past tense</em> of the underlined verb in the sentence below?",
     q2: "During the winter months, the days <em class='underline'>are</em> much shorter than the nights.",
     choices: ["were", "weren't", "where"],
      answer: 0,
