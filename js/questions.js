@@ -3615,14 +3615,28 @@ const questions = [
   },
   {
     id: 428,
-    q: "Which sentence uses a <em class='underline'>pair of commas</em> correctly?",
+    q: "Which sentence uses a <em class='bold'>pair of commas</em> correctly?",
     choices: ["I enjoy sitting in my bedroom, even though it is quite small, and listening to music.", 
     "I enjoy, sitting in my bedroom, even though it is quite small and listening to music."],
     answer: 0,
     questionRef: "paper1-2017-q19",
   },
-  
-
+  {
+    id: 429,
+    q: "Which <em class='bold'>pronoun</em> could be used to correctly replace the words underlined in the sentence below?",
+    q2: "For his ninth birthday, James visited his grandparents and <em class='underline'>his grandparents</em> took the whole family to the cinema.", 
+    choices: ["they","we", "he"],
+    answer: 0,
+    questionRef: "paper1-2017-q20a",
+  },
+  {
+    id: 430,
+    q: "Which <em class='bold'>pronoun</em> could be used to correctly replace the word underlined in the sentence below?",
+    q2: "For his ninth birthday, James visited his grandparents, who took <em class='underline'>James</em> to the cinema.", 
+    choices: ["him", "his", "he"],
+    answer: 0,
+    questionRef: "paper1-2017-q20b",
+  },
 //   {
 //     id: 118,
 //     q: "Which sentence is punctuated correctly?",
