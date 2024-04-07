@@ -2076,7 +2076,7 @@ const questions = [
   {   
     id: 237,
     q: "What does the <em class='bold'>prefix</em> <em class='underline'>multi-</em> mean in the following words?",
-    q2: "<pre>multicultural  multipurpose  multicoloured</pre>",
+    q2: "<pre>multicultural  multipurpose  \n multicoloured</pre>",
     choices: ["some", "few", "all", "many"],
     answer: 3,
     questionRef: "2019-paper1-q12",
