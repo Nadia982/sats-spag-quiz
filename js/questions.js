@@ -308,15 +308,15 @@ const questions = [
     questionRef: "paper1-2023-20b",
   },
   
-  {
-    id: 34,
-    q: "Which sentence uses <em class='bold'>speech marks</em> correctly?",
-    choices: ["&ldquo;May I use the computer?&rdquo; asked Sam", 
-    "&ldquo;May I use the computer&rdquo;? asked Sam"
-    ],
-    answer: 0,
-    questionRef: "paper1-2023-21",
-  },
+  // {
+  //   id: 34,
+  //   q: "Which sentence uses <em class='bold'>speech marks</em> correctly?",
+  //   choices: ["&ldquo;May I use the computer?&rdquo; asked Sam", 
+  //   "&ldquo;May I use the computer&rdquo;? asked Sam"
+  //   ],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-21",
+  // },
 
    {id: 35,
     q: "Select one option to show whether the underlined word is a <em class='bold'>verb</em>, a <em class='bold'>noun</em> or an <em class='bold'>adjective</em>.",
@@ -3414,7 +3414,7 @@ const questions = [
   },
   {
     id: 405,
-    q: "What does the prefix <em class='bold'>'in'</em> mean at the start of the following words?",
+    q: "What does the prefix <em class='bold'>'super'</em> mean at the start of the following words?",
     q2: "<pre>supermarket   superman   superstar</pre>",
     choices: ["above","flying", "large"],
     answer: 0,
@@ -3422,7 +3422,7 @@ const questions = [
   },
   {
     id: 406,
-    q: "What does the prefix <em class='bold'>'in'</em> mean at the start of the following words?",
+    q: "What does the prefix <em class='bold'>'anti'</em> mean at the start of the following words?",
     q2: "<pre>antiseptic   anticlockwise   antisocial</pre>",
     choices: ["against", "not", "direction"],
     answer: 0,
@@ -3998,7 +3998,87 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2016-q43",
   },
+  {
+    id: 469,
+    q: "Which word completes the sentence below with a word formed from the root word <em class='underline'>'thought'</em>?",
+    q2: "Olisa was a very ___________ girl",
+    choices: ["thoughtful", "thinking", "thoughtfully"],
+    answer: 0,
+    questionRef: "paper1-2016-q44a",
+  },
+  {
+    id: 470,
+    q: "Which word completes the sentence below with a word formed from the root word <em class='underline'>'thought'</em>?",
+    q2: "The children looked ___________ at the poster on the wall.",
+    choices: ["thoughtfully", "thinking", "thoughtful"],
+    answer: 0,
+    questionRef: "paper1-2016-q44b",
+  },
 
+  {
+    id: 471,
+    q: "Which word correctly completes the sentence below with a <em class='bold'>noun</em> formed from the verb <em class='underline'>encourage</em>?",
+    q2: "My friends offered me lots of ______________ to meet my targets.",
+    choices: ["encouragement", "encouraging", "encourages"],
+    answer: 0,
+    questionRef: "paper1-2016-q45",
+  },
+  {
+    id: 472,
+    q: "Which sentence uses <em class='bold'>hyphens</correctly>?",
+    choices: ["The children have been busy cooking some healthy sugar-free snacks.", "The children have been busy-cooking some healthy sugar free snacks.", "The children have been busy cooking some healthy sugar free-snacks."],
+    answer: 0,
+    questionRef: "paper1-2016-q46a",
+  },
+  {
+    id: 473,
+    q: "Which sentence uses <em class='bold'>hyphens</correctly>?",
+    choices: ["The children are learning some well-known traditional songs for visitors to enjoy.", "The children are learning some well known traditional-songs for visitors to enjoy.", "The children are learning-some well known traditional songs for visitors to enjoy."],
+    answer: 0,
+    questionRef: "paper1-2016-q46b",
+  },
+  {
+    id: 474,
+    q: "Take a piece of paper (or use a sketching app) and rewrite the sentence underlined below in the <em class='bold'> active </em>.",
+    q2: "Tap 'I have done this' when you have finished.",
+    q3: "<em class='underline'>The vital clues were discovered by the detective.</em>",
+    choices: ["I have done this"],
+    answer: 0,
+    questionRef: "paper1-2016-q47",
+  },
+  {
+    id: 475,
+    q: "What is the <em class='bold'>present progressive</em> form of the verb underlined below?",
+    q2: "Jim <em class='underline'>learns</em> French at school.",
+    choices: ["is learning", "learned", "was learning"],
+    answer: 0,
+    questionRef: "paper1-2016-q48b",
+  },
+  {
+    id: 476,
+    q: "What is the <em class='underline'>present progressive</em> form of the verb underlined below?",
+    q2: "He <em class='underline'>plans</em> to ski in the Alps in the spring.",
+    choices: ["is planning", "planned", "was planning"],
+    answer: 0,
+    questionRef: "paper1-2016-q48b",
+  },
+  {
+    id: 477,
+    q: "Get a piece of paper (or use a sketching app) and write a <em class='bold'>noun phrase</em> containing at least three words to complete the underlined sentence below.", 
+    q2: "Remember to punctuate your answer correctly. Tap 'I have done this' when you have finished.</em>",
+    q3: "<em class='underline'>______________________  was preparing for an important athletics competition.",
+    choices: ["I have done this."],
+    answer: 0,
+    questionRef: "paper1-2016-q49",
+  },
+  {
+    id: 478,
+    q: "Which word in the sentence below is an <em class='bold'>adverb</em>?",
+    q2: " Of all the toys in his large collection, Karl's little brother liked the cuddly rabbit best.",
+   choices: ["all", "large", "little", "best"],
+    answer: 3,
+    questionRef: "paper1-2016-q50",
+  },
 
 //remaining: 2017, 2016, 2016 sample, 2015, 2014
 
