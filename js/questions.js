@@ -3383,7 +3383,6 @@ const questions = [
     q: "What does the prefix <em class='bold'>'re-'</em> mean at the start of the following words?",
     q2: "<pre>re-enter   return   reappear</pre>",
     choices: ["again", "in", "before"],
-    choices: ["", ""],
     answer: 0,
     questionRef: "prefix re-",
   },
