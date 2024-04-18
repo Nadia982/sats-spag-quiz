@@ -4078,8 +4078,15 @@ const questions = [
     answer: 3,
     questionRef: "paper1-2016-q50",
   },
+  {
+    id: 479,
+    q: "Which sentence must end with a <em class='bold'>question mark</em>?",
+   choices: ["What I wanted had already sold out", "Ask Ryan what he thinks about it", "What time will the film start", "I didn't know what to say"],
+    answer: 2,
+    questionRef: "paper1-2016-sample-q1",
+  },
 
-//remaining: 2017, 2016, 2016 sample, 2015, 2014
+//remaining: 2016 sample, 2015, 2014
 
 // 2016 paper  
 //{
