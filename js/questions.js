@@ -4085,6 +4085,14 @@ const questions = [
     answer: 2,
     questionRef: "paper1-2016-sample-q1",
   },
+  {
+    id: 480,
+    q: "Which <em class='bold'>pair of verbs</em> correctly completes the sentence below?",
+    q2: "Pluto ______ now called a dwarf planet, but once it _____ classified as a planet.",
+   choices: ["was is", "was was", "is is","is was"],
+    answer: 3,
+    questionRef: "paper1-2016-sample-q2",
+  },
 
 //remaining: 2016 sample, 2015, 2014
 
