@@ -103,27 +103,27 @@ const questions = [
     questionRef: "paper1-2023-5a",
   },
 
-  {
-    id: 13,
-    q: "Which sentence is written in <em class='bold'>Standard English</em>?",
-    choices: [
-      "We done a great job in picking the juiciest fruit for our pie.",
-      "We did a great job in picking the juiciest fruit for our pie.",
-    ],
-    answer: 1,
-    questionRef: "paper1-2023-5b",
-  },
+  // {
+  //   id: 13,
+  //   q: "Which sentence is written in <em class='bold'>Standard English</em>?",
+  //   choices: [
+  //     "We done a great job in picking the juiciest fruit for our pie.",
+  //     "We did a great job in picking the juiciest fruit for our pie.",
+  //   ],
+  //   answer: 1,
+  //   questionRef: "paper1-2023-5b",
+  // },
 
-  {
-    id: 14,
-    q: "Which sentence is written in <em class='bold'>Standard English</em>?",
-    choices: [
-      "My brother didn't do anything to help us.",
-      "My brother didn't do nothing to help us.",
-    ],
-    answer: 0,
-    questionRef: "paper1-2023-5c",
-  },
+  // {
+  //   id: 14,
+  //   q: "Which sentence is written in <em class='bold'>Standard English</em>?",
+  //   choices: [
+  //     "My brother didn't do anything to help us.",
+  //     "My brother didn't do nothing to help us.",
+  //   ],
+  //   answer: 0,
+  //   questionRef: "paper1-2023-5c",
+  // },
   // {
   //   id: 15,
   //   q: "Which pair of words are <em class='bold'>antonyms</em>?",
@@ -1595,14 +1595,14 @@ const questions = [
     answer: 1,
     questionRef: "paper1-2022-q42a",
   },
-  {
-    id: 179,
-    q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?",
-    q2: "'We was helping to design the new school building'",
-    choices: ["standard", "non-standard"],
-    answer: 1,
-    questionRef: "paper1-2022-q42b",
-  },
+  // {
+  //   id: 179,
+  //   q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?",
+  //   q2: "'We was helping to design the new school building'",
+  //   choices: ["standard", "non-standard"],
+  //   answer: 1,
+  //   questionRef: "paper1-2022-q42b",
+  // },
   {
     id: 180,
     q: "Is the following sentence written in <em class='bold'>Standard</em> or <em class='bold'>non-Standard</em> English?", 
@@ -1977,14 +1977,14 @@ const questions = [
     answer: 0,
     questionRef: "2019-paper1-q4",
   },  
-  {
-    id: 225,
-    q: "Which word can be added to the following prefix to make a new word?",
-    q2: "inter",
-    choices: ["action", "approval", "circle", "social"],
-    answer: 0,
-    questionRef: "2019-paper1-q5a",
-  }, 
+  // {
+  //   id: 225,
+  //   q: "Which word can be added to the following prefix to make a new word?",
+  //   q2: "inter",
+  //   choices: ["action", "approval", "circle", "social"],
+  //   answer: 0,
+  //   questionRef: "2019-paper1-q5a",
+  // }, 
 {
   id: 226,
     q: "Which word can be added to the following prefix to make a new word?",
@@ -2459,7 +2459,7 @@ const questions = [
     id: 285,
     q: "Which word in the sentence below is a preposition?",
     q2: "I ate lunch after the game",
-    choices: ["after", "I", "ate", "lunch", "the", "game"],
+    choices: ["after", "I", "ate", "lunch"],
     answer: 0,
     questionRef: "2019-paper1-q49a",
   },
@@ -2584,7 +2584,7 @@ const questions = [
     questionRef: "homophones",
   },
   {
-    id: 301,
+    id: 301, 
     q: "Which word correctly completes the sentence below?",
     q2: "_____ are you?",
     choices: ["Where", "Were", "We're", "Wear"],
@@ -2779,7 +2779,7 @@ const questions = [
     q: "Which word correctly completes the sentence below?",
     q2: "She quickly ____ from her seated position.",
     choices: ["rows", "rose"],
-    answer: 0,
+    answer: 1,
     questionRef: "homophones - rows/rose",
   },
 
