@@ -12,7 +12,7 @@ const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
 const submitButton = document.querySelector(".submit-btn");
 const nextButton = document.querySelector(".next-btn");
-const questionLimit = 50;
+const questionLimit = 20;
 const questionsAskedContainer = document.querySelector(".questions-asked-container"
 );
 
